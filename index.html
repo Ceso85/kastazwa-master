@@ -1,0 +1,1118 @@
+<?php
+    include 'cachetanection.php';
+    include 'indexcomments.php';
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="cachetajoie.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <meta name="description" content="Room for Joy">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Cache_Ta_Joie_Room_for_Joy</title>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="cachetajoie.js"></script>
+    </head>
+
+    <!--- navbar --->
+
+    <body style="background-image: url(images/Moon.jpg)">
+            <a id="backhome"></a>
+
+            <nav class="navbar navbar-expand-md row">
+                <div class="justify-content-center align-items-center row"></div>
+                    <a href="#backhome" class="navbar-brand col-2 m-5"><img class="logo img-fluid" src="images\It's all a big nothing -front-.png" width="100" height="auto"></a>
+                        <h1 class="neonText handwriting-animation py-5 mb-5 col">KASTAZWA_:writing/at/home/playing/piano/for/fun:</h1>
+                </div>
+
+            </nav>
+
+    <!--- topic: home flipping picture -->
+
+    <div class="container-fluid overflow-hidden">
+        <div class="home">
+
+            <div class="row justify-content-around align-items-center mt-5">
+
+                <div class="col thecard">
+                    <div class="thecard-inner">
+                    
+                    <a href="#homenu">
+                        <img class="homepicfront img-fluid" src="images\Profile.jpg" alt="Front Image">
+                            <img class="homepicback img-fluid" src="images\Profile.jpg" alt="Back Image">
+                    </a>
+                    
+                    
+                    </div>
+        
+                    <style>
+        
+                            .thecard {
+                                max-width   : 350px;
+                                height      : 350px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                    
+                            .thecard-inner {
+                                width          : 100%;
+                                height         : 100%;
+                                transition     : transform 0.6s;
+                                transform-style: preserve-3d;
+                            }
+                    
+                            .thecard:hover .thecard-inner {
+                                transform: rotateY(360deg);
+                            }
+                            
+                            .homepicfront, .homepicback  {
+                                position           : absolute;
+                                backface-visibility: hidden;
+                                width               : 100%;
+                                height              : 100%;
+                                border-radius      : 100%;
+                                border-style: solid;
+                                border-color: yellow;
+                                border-width: 2px;
+                            }
+                    
+                            .homepicback {
+                                filter          : grayscale(50%);
+                                background-color: grey;
+                            }
+                    
+                    </style>
+                </div>
+            </div>
+        </div>
+
+        
+
+    <!--- topic: home menu -->
+
+            <div class="row justify-content-around align-items-start py-5 my-5" id="homenu">
+
+                <div>
+                    <a href="#living">
+                        <img class="spaces img-fluid custom-image" alt="living" src="images\living.jpg" style="width:100px; height:100px;">
+                    </a>
+                </div>
+                
+
+                <div>
+                    <a href="#screaming">
+                        <img class="spaces spacesB img-fluid custom-image" alt="screaming" src="images\screaming.jpg" style="width:100px; height:100px;">
+                    </a>
+                </div>
+
+                <div class="">
+                    <a href="#guest">
+                        <img class="spaces img-fluid custom-image" alt="guest" src="images\guest.jpg" style="width:100px; height:100px;">
+                    </a>
+                </div>
+                
+                <div>
+                    <a href="#store">
+                        <img class="spaces spacesB img-fluid custom-image" alt="storage" src="images\storage.jpg" style="width:100px; height:100px;">
+                    </a>
+                </div>
+                    
+                <style> 
+                        
+                    .spaces {
+                        width: 250px;
+                        height: auto;
+                        border-radius: 100%;
+                        filter: grayscale(50%) blur(1px);
+                        animation-name: float;
+                        animation-duration: 3s;
+                        animation-iteration-count: infinite;
+                        border-style: solid;
+                        border-color: yellow;
+                        border-width: 2px;
+                        }
+
+                    .spaces:hover .overlay {
+                        opacity: 1;
+                        cursor: pointer;
+                        }
+                    
+                   
+                    @keyframes float {
+                        0% { transform: translateY(0px); }
+                        50% { transform: translateY(-20px); }
+                        100% { transform: translateY(0px); }
+                        }
+
+                    .spacesB {
+                            animation-name: floatB;
+                            animation-duration: 3s;
+                            animation-iteration-count: infinite;
+                        }
+
+                    @keyframes floatB {
+                        0% { transform: translateY(0px); }
+                        50% { transform: translateY(+20px); }
+                        100% { transform: translateY(0px); }
+                        }
+
+                </style>
+
+            </div>
+                    
+            <div class="row justify-content-center align-items-start mx-5" style="color: white;" font-family="Lucida Sans Typewriter">
+                <p>Time to fill this space with something new, with something that comes up daily from the never-ending changing of things, of colours, of moods, of impressions.</br>
+                Time to write things down before the memories will vanish, to take notes of names, places, feelings.</br>
+                The urge to leave a trace, the urge to follow a melody without knowing where it is going.</br>
+                The urge to fill black with with white, the scream that bounces inside my mind. The lack of rules, living in a world where disorder prevails, a world of no control, of things far from being good.<br>
+                The eternal search of something we can not find, the only thing that keeps the human alive.</p>
+            </div>
+            
+
+        
+
+    <!--- topic: living --->
+
+                <div class="">
+                    <div class="row justify-content-center py-5" id="living">
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/H7J1JMZktN4" title="YouTube video player" title="YouTube video player" 
+                                frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+    
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/iC61w6vNKTI" title="YouTube video player" 
+                                frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+    
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/KIgpfClLznE" title="YouTube video player" 
+                                frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+    
+                    
+    
+                    <div class="row justify-content-center align-items-center py-5 neonText">
+    
+                        <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/us/artist/kastazwa/1341925360"><div class="col icon rounded">A</div></a>
+    
+                        <a target="_blank" rel="noopener noreferrer" href="https://kastazwa.bandcamp.com/album/a-shapeless-figure"><div class="col icon rounded">BC</div></a>
+    
+                        <a target="_blank" rel="noopener noreferrer" href="https://music.youtube.com/channel/UCSXQQDJUC0pUz1dEXD3AdNQ"><div class="col icon rounded">YTM</div></a>
+    
+                        <a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/kastazwa">
+                        <div class="col icon rounded">SC</div></a>
+    
+                        <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/artist/5IWttUmh1sIGt2BxqMEy9h"><div class="col icon rounded">S</div></a>
+                    </div>
+                </div>
+                
+
+    <!--- topic: screaming --->
+        
+        <a id="screaming"></a>
+            <div class="screaming">
+
+                <div class="row justify-content-center py-5 my-5" id="screaming">
+                    <!--- echo
+                    <?php --->
+                    "<form action='".setComments($conn)."' method='POST'>
+                        <label for="name" class="form-label mb-1">Name:</label>
+                        <input type="text" class="form-control form-control-lg mb-3" id='name' placeholder='reveal_yourself.'>
+
+                        <label for="email" class="form-label mb-1">Email_Address:</label>
+                        <input type="email" class="form-control form-control-lg mb-3" 
+                        id='email' placeholder='make_sure_is_comfy.'>
+
+                        <label for="comments" class="form-label mb-1">Comments:</label>
+                        <textarea id='query' class="form-control form-control-lg mb-3" placeholder='Give_me_the_words_that_ tell_me_nothing.' style="height: 200px"></textarea>
+                </div>
+
+                <div class="row scream justify-content-center my-5">
+                        <button type="submit" class="btn btn-dark btn-lg">
+                            Scream it out!
+                        </button>
+                    </form>
+                        <!--- getComments($conn);
+                        ?> --->
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center text-nowrap neonText icon py-5 my-5">
+                <p>SHOUT, SHOUT, LET_IT_ALL_OUT_SHOUT, SHOUT, 
+                    LET_IT_ALL_OUT_SHOUT, SHOUT, LET_IT_ALL_OUT_</p>
+            </div>
+
+        <!--- topic: guest --->
+
+            <div class="guest">
+
+                <div id="guest" class="row justify-content-center pt-5 mt-5">
+                    <div class="col-sm-4" data-aos="rotate">
+                        <img src="images/Recording Leo Haus II.jpg" class="img-fluid"></div>
+                
+                    <div class="col-sm-4" data-aos="fade-up">
+                        <img src="images/Alte Rote Löwe III.jpg" class="img-fluid"></div>
+                </div>
+
+                <div id="guest" class="row justify-content-center pb-5 mb-5">
+                    <div class="col-sm-4" data-aos="fade-right">
+                        <img src="images/Alte Rote Löwe.jpg" class="img-fluid"></div>
+                </div>
+
+            </div>
+
+        <div class="row justify-content-center text-nowrap neonText icon py-5 my-5">
+            <p>>WE_COULD_BE_GREAT_ROOMMATES_WE_COULD_BE_GREAT_ROOMMATES_WE_COULD_BE_GREAT_ROOMMATES_W_COULD_BE_GREAT_ROOMMATES_</p>
+        </div>
+            
+         <!--- topic: storage room it's all a big nothing --->
+
+            <div class="store">
+
+                <div class="py-2" id="store">
+
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="image-container col-6 py-5">
+                                <img src="images\It's all a big nothing -front-.png" class="img-fluid albumtracks" data-target="text1">
+                            </div>
+    
+                            <div class="col-6">
+                                <ul class="tracklisa list-unstyled p-2" id="text1">
+                                    <li class="track-item" data-target="walk" data-target="walk">Walking on a Wire</li>
+                                    <li class="track-item" data-target="night">A Midsummer Night</li>
+                                    <li class="track-item" data-target="nothing">It's All a Big Nothing</li>
+                                    <li class="track-item" data-target="lovers">No Country for Old Lovers</li>
+                                    <li class="track-item" data-target="weather">Talk About the Weather</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="walk">
+                                The moment when they told you are special</br>
+                                is that when you realise you are not</br>
+                                it works the same for everyone</br>
+                                but I was there</br> 
+                                to make you feel</br>
+                                the one.</br>
+                            
+                                I'll die like a rockstar</br>
+                                because I don’t know</br> 
+                                other ways to die.</br>
+
+                                If I keep turning the page</br>
+                                I will finish the book</br> 
+                                before you come.</br>
+
+                                We are walking on a wire</br>
+                                that is about to bend</br> 
+                                we know that somehow/sometime</br>
+                                it was gonna come</br> 
+                                the word</br>
+                                the end.</br>
+
+                                I'll die like a rockstar</br> 
+                                because I don’t know</br> 
+                                other ways to die.</br>
+
+                                I'll die like a rockstar</br> 
+                                because I don’t know</br> 
+                                other ways to die.</br>
+
+                                We'll die like the rockstars</br> 
+                                because we don’t know</br> 
+                                other ways to die.</br></br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="night">
+                                We shared our women</br>				
+                                we shared our shores</br>				
+                                there was no other way</br>			
+                                to reproduce.</br>				
+
+                                Time had no shape</br>			
+                                no weight, no mass</br>				
+                                sometimes I talk to the clothes you dress.</br>		
+
+                                I talk to the chair</br>				
+                                you used to sit-on</br>				
+                                because I was never able</br>			
+                                to win your soul.</br>				
+
+                                Another fruitless winter</br>
+                                the flow of time</br>
+                                the worst was gonna happen</br> 
+                                we did not know why.</br>
+
+                                Helena came in rhymes</br>
+                                Helena came on time</br> 
+                                Helena came alone</br>
+                                I owe you a child.</br>
+
+                                Before she came we had to pretend</br>
+                                before the summer was going to an end</br>
+                                pretend to find a way out of the wood</br>
+                                pretend to reach Athens as soon as we could.</br>
+
+                                It is a privilege</br> 
+                                not to see you more</br>
+                                I will no longer bring</br> 
+                                the moonlight to your floor.</br>
+
+                                Now I can put a lion</br> 
+                                among your delicate angsts</br>
+                                now I can set a scandal</br> 
+                                on your sex.</br>
+
+                                But then she came</br>
+                                and we could not pretend</br>
+                                suddenly the summer went to an end</br>
+                                pretend to find a way out of the wood</br>
+                                pretend to reach Athens as soon as we…</br>
+
+                                And when she came</br> 
+                                I could not resist</br>
+                                I could not find a way</br>
+                                through all the mist.</br>
+
+
+                                And when she came</br> 
+                                I could not resist</br>
+                                I could not find a way</br>
+                                through all the mist.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="nothing">
+                                Is it the way is gonna end?</br>
+                                Music was another story</br>
+                                when you began</br>
+                                cause music was your life</br>
+                                cause music was your soul</br>
+                                cause music was your charm.</br>
+
+                                You never say "never"</br>
+                                but you have already</br>
+                                said "never" twice.</br>
+
+                                It's all a big nothing dude</br>
+                                we have been told</br>
+                                it's all a big nothing boy</br>
+                                and now we begin to grow.</br>
+
+                                Because with your last song</br> 
+                                you have lost your smile</br>
+                                because with your last song</br>
+                                you have lost your touch</br>
+                                because with your last song</br>
+                                you have lost your charm.</br>
+
+                                It's all a big nothing dude</br>
+                                we have been told</br>
+                                it's all a big nothing boy</br>
+                                and now we begin to grow</br>
+                                and now we begin to grow</br>
+                                it's time we begin to grow.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="lovers">
+                                They keep digging in hope to find</br>
+                                despite the water despite</br>
+                                to reach the real state of things</br>
+                                and find out there is no means</br>
+                                to an end</br>
+                                to an end.</br>
+
+                                And all the ideas they have got in their heads</br>
+                                despite the love and the death</br>
+                                a place where they will rest in peace</br>
+                                because all good things come</br> 
+                                to an end</br>
+                                to an end</br>
+                                to an end</br>
+                                to an end.</br>
+
+                                They believed in Santa</br>
+                                they believed in God</br>
+                                they used to fight</br> 
+                                for human rights.</br>
+
+                                Don't say anything if there is</br>
+                                anything to say</br>
+                                let me enjoy</br>
+                                the end</br> 
+                                the end</br> 
+                                the end.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="weather">
+                                I want to see you every</br>
+                                goddamn morning waking up</br>
+                                I want to hear the</br>
+                                whistleblower from my coffee cup</br>
+                                I want to turn my back and</br>
+                                see you on the other side</br>
+                                I want to make sure you have nothing to fear</br>
+                                and nothing to hide.</br>
+
+                                We spent our time talking about the unemployment rate</br>
+                                about the reason why behind every closed door</br>
+                                there is an open gate.</br>
+
+                                I want to talk about weather</br>
+                                I want to talk about...</br>
+
+                                I want to know the reason why</br>
+                                it keeps raining heavily</br>
+                                while we are signing on a bench</br>
+                                our contract to eternity.</br>
+
+                                I want to talk about the weather</br>
+                                the weather</br>
+                                about the weather</br>
+                                I want to talk about...</br>
+
+                                I would tie you up</br>
+                                I would lock you inside the house</br> 
+                                I would throw the keys away</br>
+                                So I know you can't go out.</br>
+                            </div>
+                    </div>
+
+        <!--- topic: storage room a shapeless figure --->
+
+                    <div class="row">
+                        <div class="col">
+                    
+                            <div class="image-container col-6 py-5">
+                                <img src="images\A Shapeless Figure.jpg" class="img-fluid albumtracks" data-target="text2">
+                            </div>
+                    
+                            <div class="col-6">
+                                <ul class="tracklisb list-unstyled p-2" id="text2">
+                                    <li class="track-item" data-target="dream">The Dreamcatcher</li>
+                                    <li class="track-item" data-target="still">Still Here</li>
+                                    <li class="track-item" data-target="spring">Springtime Destroys</li>
+                                    <li class="track-item" data-target="roulette">Roulette</li>
+                                    <li class="track-item" data-target="ocean">Ocean</li>
+                                    <li class="track-item" data-target="fig1">A Shapeless Figure #1</li>
+                                    <li class="track-item" data-target="piano">Shoot the Piano Player</li>
+                                    <li class="track-item" data-target="fig5">A Shapeless Figure #5</li>
+                                    <li class="track-item" data-target="road">Your Distance is a Road to Run</li>
+                                    <li class="track-item" data-target="coincidence">A Coincidence</li>
+                                </ul>
+                            </div>
+                    
+                        </div>
+                    
+                            <div class="text-content col text-left lyrics py-5" id="dream">
+                                It is too late to love me now</br>
+                                sometimes I tend to rearrange</br>
+                                all the furnitures</br>
+                                mostly because I need</br>
+                                a reset</br>
+                                button.</br>
+                        
+                                The city view from the top</br>
+                                looks like a huge cemetery</br>
+                                Nodoby has a real name</br>
+                                around here.</br>
+                        
+                                I will draw</br>
+                                a picture in black and white</br>
+                                of you</br>
+                                trying to catch the life</br>
+                                you have never had.</br>
+                        
+                                The dreamcatcher</br>
+                                swings</br>
+                                on top of beds</br>
+                                of people</br>
+                                who never had</br>
+                                Love.</br>
+                            </div>
+                        
+                            <div class="text-content col text-left lyrics py-5" id="still">
+                                Hello, it's me</br>
+                                the park where you grew up</br>
+                                The bench you carved</br>
+                                the old couple</br>
+                                passed away</br>
+                                might have been some years ago 
+                                or the other day.</br>
+                        
+                                Hello, it's me</br>
+                                the sky you never left me by</br>
+                                I am grey, cause I</br>
+                                carry the weight of the years.</br>
+                        
+                                Hello, it's me</br>
+                                the road you run</br>
+                                you treat me like a whore</br>
+                                but I'm still here</br>
+                                And I get bigger</br>
+                                if you do not</br>
+                                do not turn back.</br>
+                        
+                                Hello, we are</br>
+                                the goddamn places</br>
+                                where you use to work</br>
+                                our walls smells like</br>
+                                all the hours that you threw away</br>
+                                might have been some years ago 
+                                or today.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="spring">
+                                What I will be</br> 
+                                You tell me</br>
+                                Since I can’t choose</br>
+                                Since I can’t be.</br>
+
+                                I could not care</br>
+                                so less</br>
+                                you are charming when</br>
+                                you hide</br>
+                                from the sun</br>
+                                that threads you like</br> 
+                                a new syndrome.</br>
+
+                                Leaves a tattoo</br>
+                                that you do not want</br> 
+                                a permanent mark</br>
+                                an innocent scar</br>
+                                a sudden shock.</br>
+
+
+                                What I will be</br>
+                                I tell you</br> 
+                                Since I can chew</br>
+                                Since I can be.</br>
+
+                                This life is hard</br>
+                                for everyone</br>
+                                I have never had</br>
+                                so much fun.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="roulette">
+                                I am filling my room of corpses</br>
+                                in a slow friday afternoon</br>
+                                listen to say they say</br>
+                                thinking about what they have done</br>
+                                that is what I still have to do</br>
+                                while the sun is on the third floor.</br>
+                                
+                                Normally here borns the first cold</br>
+                                and the seasons start to die</br>
+                                sometimes it is good it feels different</br>
+                                otherwise just find a better place to play.</br>
+                                
+                                Silently silently or noisily</br>
+                                A succession of black and red</br>
+                                I need a number to start</br>
+                                scared of misundertand myself</br>
+                                Read and repeat it slowly</br>
+                                cause it is the last one for a longtime</br>
+                                In the meanwhile I just keep learning</br>
+                                Try not to make the same mistake twice.</br>
+                                
+                                Show me show me what it is mine</br>
+                                before lose you I will get satisfied</br>
+                                I have to destroy our time</br>
+                                if I want to say goodbye</br>
+                                or if I want to save the night.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="fig1">
+                                I take all the blame</br>
+                                it was always my fault</br>
+                                if I am not dressed</br>
+                                like a princess</br>
+                                But what should I get?</br>
+                                what should I get?</br>
+                                
+                                You are raining like a waterfall</br>
+                                and I drown in your eyes</br>
+                                You shine</br>
+                                and I drown while you cry.</br>
+                                
+                                I do not remember when</br>
+                                we passed the deadline</br>
+                                I have not seen the sunlight</br> 
+                                in years.</br>
+                                
+                                I have not seen your face</br>
+                                today has been an year</br>
+                                your face</br>
+                                my faith</br>
+                                my disgrace.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="piano">
+                                Shoot the piano player</br>
+                                leave all your worries behind</br>
+                                sometimes to go forward</br>
+                                you need to go back first</br>
+                                
+                                Do believe in stereotypes</br>
+                                but do not believe in destiny</br>
+                                I am not destiny</br> 
+                                I am a coincidence</br>
+                                one out of a milion.</br>
+                                
+                                I am not a cause</br>
+                                I am a consequence</br>
+                                like photos</br>
+                                like friendships</br>
+                                things</br>
+                                become valuable</br>
+                                with the time</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="fig5">
+                                Oh No! Oh God!</br>
+                                It happened again</br>
+                                I stumble and fall</br>
+                                I know It happened again.</br>
+
+                                We need to go</br>
+                                The ground is crumbling underneath</br>
+                                our feet this love</br>
+                                this love does not let us the time</br>
+                                to breathe.</br>
+
+                                Sew me up</br>
+                                Keep track</br>
+                                of the time</br>
+                                of the years</br>
+                                of the people</br>
+                                who surround me.</br>
+
+                                My Glossophobia will win</br>
+                                I will never be able to spell it out</br>
+                                I know what I mean</br> 
+                                but...</br>
+                                oh...</br>
+                                oh...</br>
+
+                                Wave your way goodbye</br>
+                                my shoes are walking away from me</br>
+                                And now that my glasses fall over</br>
+                                and now that finally I can see.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="road">
+                                This shot</br>
+                                was the greatest one</br>
+                                I stole</br>
+                                a picture of you</br>
+                                while you were</br> 
+                                staring into space</br>
+                                so much grace.</br>
+
+                                And I know</br>
+                                that is hard to keep up</br>
+                                with the reality</br>
+                                and I know that</br>
+                                all of this</br>
+                                it is just</br>
+                                self defence.</br>
+
+                                You shrug</br> 
+                                and I smile</br>
+                                you frown</br>
+                                and I laugh</br>
+                                your distance</br>
+                                is a road</br>
+                                to run.</br>
+
+                                It is hard</br>
+                                to fill up all this space</br>
+                                so much grace.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="coincidence">
+                                Time</br>
+                                I need time</br>
+                                to find</br>
+                                my way.</br>
+
+                                Dear isolation</br>
+                                you are the key</br>
+                                to success</br>
+                                the road you take</br>
+                                it is not the one you choose.</br>
+
+                                You have just passed my by</br>
+                                but why</br>
+                                should I smile</br>
+                                you have never been so far</br>
+                                I have never been so close</br>
+                                to the point.</br>
+                            </div>
+                    </div>
+                    
+                    
+
+        <!--- topic: storage room for the time being --->
+
+                    <div class="row">
+                        <div class="col">
+                    
+                            <div class="image-container col-6 py-5">
+                                <img src="images\For the Time Being.jpg" class="img-fluid albumtracks" data-target="text3">
+                            </div>
+                    
+                            <div class="col-6">
+                                <ul class="tracklisc list-unstyled p-2" id="text3">
+                                    <li class="track-item" data-target="here">Where do we go from Here</li>
+                                    <li class="track-item" data-target="indian">The Indian Summer</li>
+                                    <li class="track-item" data-target="planets">Planets</li>
+                                    <li class="track-item" data-target="guanabana">Guanabana Guajira Hat</li>
+                                    <li class="track-item" data-target="fez">Fez</li>
+                                    <li class="track-item" data-target="place">La Grande Place</li>
+                                    <li class="track-item" data-target="nariz">Nariz y Boca</li>
+                                    <li class="track-item" data-target="guffin">Mac Guffin</li>
+                                    <li class="track-item" data-target="blue">The Same Blue</li>
+                                    <li class="track-item" data-target="sand">Like the Sand, oh the Quicksand</li>
+                                    <li class="track-item" data-target="cuerpo">La Revolucion desde tu Cuerpo</li>
+                                    <li class="track-item" data-target="air">You can find me in the Air</li>
+                                </ul>
+                            </div>
+                    
+                        </div>
+                    
+                            <div class="text-content col text-left lyrics py-5" id="indian">
+                                The playground where I grew up</br>
+                                The swing where I was conceived</br>
+                                since the hurricane has come</br>
+                                does not exist anymore.</br>
+
+                                It is full of drunken kids</br>
+                                the indian summer has left no trace</br>
+                                they need to drown in their sorrow</br>
+                                they need to find an answer before tomorrow.</br>
+
+                                And I would give a week of my life</br>
+                                if the indian summer can borrow me a wife</br>
+                                I do not care if she lies or not</br>
+                                the indian summer can promise me a lot.</br>
+
+                                I knew it was gonna happen</br>
+                                cause she promised me the rain</br>
+                                she was gonna wash out</br>
+                                all these drunken kids in pain</br>
+
+                                I follow a voice</br>
+                                that leads to nowhere</br>
+                                toward a pale sun</br>
+                                I am there.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="planets">
+                                She is a poet</br>
+                                and so am I</br>
+                                from the planet A</br>
+                                till the planet B</br>
+                                we ride.</br>
+
+                                Freedom of speech</br> 
+                                freedom of being</br>
+                                freedom as a choice</br>
+                                a choice to survive.</br>
+
+                                You will end up living alone</br>
+                                and so will I.</br>
+
+                                Blinded by the sun</br>
+                                I grow my desire</br>
+                                Pouring petrol on fire</br>
+                                I will take what I want</br>
+                                because it is all mine.</br>
+
+                                I am a sailor</br>
+                                and so is She</br> 
+                                from the page 1</br>
+                                till the page 101</br>
+                                we write.</br>
+
+                                Freedom of being</br>
+                                being what you are not.</br>
+
+                                I will end up being alone</br>
+                                and so will you.</br>
+
+                                Blinded by the pale sun</br>
+                                I grow my desire</br>
+                                Pouring petrol on fire</br>
+                                I am the monster</br>
+                                I am a specimen.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="guanabana">
+                                Canto por mi Guajira</br>
+                                canto mirando el campo</br>
+                                si el huracán se acerca</br>
+                                los perros llaman tormenta.</br>
+
+                                Que me quites el sombrero por favor</br>
+                                te lo pido sin mirarte el los ojos</br>
+                                sírveme un ron con hielo</br>
+                                que me haces feliz con poco.</br>
+
+                                Quitame el sombrero por favor</br>
+                                que te quiero mirar en los ojos</br>
+                                sírveme un ron con hielo</br>
+                                que te hago feliz con poco.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="place">
+                                When you draw my profile</br>
+                                leave a space between the eyes</br>
+                                carve me on wood like a king.</br>
+
+                                Play without the queen</br>
+                                this is a matter of trust</br>
+                                illegal shelter unsafe.</br>
+
+                                You should go with the flow</br>
+                                try not to follow the road.</br>
+
+                                Darkest places, are not safer.</br>
+                                        
+                                Then you look at me and you say:</br>
+                                “The only space that remains</br>
+                                it is in our mind” and I look outside</br>
+                                “This mystic place that one day</br>
+                                we will own” when you draw my profile</br>
+                                please do not forget the mouth</br>
+                                so I can keep with the breath properly.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="nariz">
+                                No hay regreso no hay despedida</br>
+                                No hay ninguna salida.</br>
+
+                                Pareces ser un tipo de los ’60</br>
+                                Un guitarrista que escribe</br>
+                                Un escritor que canta</br>
+
+                                Con este apellido</br>
+                                hay mas que uno</br>
+                                Con este apellido</br>
+                                hay mas que uno</br>
+
+                                Que lo mato la mafia americana</br>
+                                los rusos los periodistas</br>
+                                Que siguen diciendo che es vivo</br>
+                                Este tipo quizás, es un subversivo</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="guffin">
+                                To the greatest incomparable</br>
+                                and miserable inexplicable</br>
+                                you stand alone at the end of the journey</br>
+                                the eternal living makes you horny.</br>
+
+                                And you have nothing to declare</br>
+                                you do not have nothing to do with this story</br>
+                                it is not the right time yet</br>
+                                we haven’t figure it out.</br>
+
+
+                                Only a matter on non-sense stories</br>
+                                Only a matter on non-sense stories.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="blue">
+                                The only star left that shines</br>
+                                that’s why I am stuck on the same loop</br>
+                                the colour that I couldn’t find</br>
+                                it is bouncing in my head</br>
+                                it is shaking in my bed</br>
+                                the silence only tells the truth</br>
+                                I am sitting here with the same blue.</br>
+
+                                I given up to all my plans</br>
+                                in order to choose between prose or verse</br>
+                                between english or french</br>
+                                between movement or rest.</br>
+
+                                I have found the right rock</br>
+                                away from the lighthouse.</br>
+
+                                This twirl that dig down in the sea</br>
+                                I thought that you only drink tea.</br>
+
+                                I can’t take</br>
+                                the promises</br>
+                                I made you back</br>
+                                cause I can pretend</br>
+
+                                to be a brave man</br>
+                                another one who crossed your path</br>
+                                the staircase to</br>
+                                
+                                The deepest blue</br>
+                                except that I</br>
+                                I didn’t make it through</br>
+                                I didn’t jump</br>
+
+                                On the right cab</br>
+                                on the A train</br>
+                                the only star that shines</br>
+                                it only passed one time.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="sand">
+                                We’re all humans</br>
+                                We’re all greed</br>
+                                we are all want</br>
+                                the same thing.</br>
+
+                                Like the sand</br> 
+                                oh the quicksand</br> 
+                                like the glow</br> 
+                                of the great unknown.</br>
+
+                                The vastness of the oceans</br>
+                                the water takes over everything</br>
+                                ice turns into water</br>
+                                and swallow the land under my feet.</br>
+
+                                The vastness of the oceans</br>
+                                the water takes over everything</br>   
+                                are you also feeling warmer</br>
+                                or maybe I am only getting ill?</br>
+
+                                Un camino sin sentido</br> 
+                                que no pierdas la calma</br>
+                                sin te quedaras sin agua</br>
+                                antes llegar a las palmas.</br>
+
+                                Que no tengas miedo</br>
+                                Cuando enfrentas tu alma</br> 
+                                Ni si pierdas el oído</br>
+                                cuando encuentras las palmas.</br>
+
+                                We’re all humans</br>
+                                We’re all greed</br>
+                                we are all want</br>
+                                the same thing</br>
+                                like the sand</br> 
+                                oh the quicksand</br>
+                                like the sand</br> 
+                                oh the quicksand.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="cuerpo">
+                                La revolución desde tu cuerpo</br>
+                                dulce razón</br>
+                                para hacer muertos</br>
+                                si no sientes dolor</br>
+                                si estas contento</br>
+                                no estas luchando</br>
+                                por el sentimiento</br>
+
+                                Es la revolución desde tu cuerpo</br>
+                                el unica arma</br>
+                                que te nace pa dentro</br>
+                                y si la sacas</br>
+                                te dará arrepentimiento.</br>
+                                es la mariposa</br> 
+                                que se entrega al viento.</br>
+
+                                Es la revolución</br>
+                                desde tu cuerpo</br>
+                                desde tu cuerpo</br>
+                                desde tu cuerpo</br>
+                                desde tu cuerpo.</br>
+                            </div>
+
+                            <div class="text-content col text-left lyrics py-5" id="air">
+                                I thought you were familiar</br>
+                                with cockroaches and other insects</br>
+                                since once you said you lived</br>
+                                where most of humans haven’t their feet.</br>
+
+                                I thought you were someone with real intentions</br>
+                                the countless nights we spent</br>
+                                feeding me and my disability.</br>
+
+                                I focus all my efforts now</br>
+                                in bringing you down</br>
+                                in making you understand</br>
+                                that my life is not a weekend.</br>
+
+                                And if I can’t accomplish any more than that</br>
+                                I’ll be the first to disappear</br>
+                                and leave you with your insect fear.</br>
+
+                                I thought you were the key to the success</br>
+                                I thought you were the word I couldn’t say</br>
+                                but since I’ll leave my body there.</br>
+
+                                You can find me now</br>
+                                you can find me in the air</br> 
+                                you can find me now</br>
+                                you can find me in the air.</br>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+        <!--- footer --->
+
+        <footer class="row justify-content-around align-items-center pt-4">
+            <span class="mr-4">Let's keep in touch</span>
+
+            <span>
+            <a href="https://www.facebook.com/pages/category/Musician-Band/Kastazwa-2585911911635350/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg></a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+
+              <a href="https://www.youtube.com/user/WilliamWeep/channels">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg></a>
+            </span>
+
+            <span class="m-4">email:kastazwa@outlook.it</span>
+            <a href="Impressumjoie.html"><span class="acca">Impressum</span></a>
+            <span>&copy Kastazwa 2023</span>                 
+        </footer>
+
+        <!--- external links --->
+
+    </div>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <script>
+                        AOS.init();
+                    </script>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </body>
+
+</html>
