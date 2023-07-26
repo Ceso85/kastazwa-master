@@ -1,0 +1,227 @@
+
+/* body & navbar */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    top: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    border: 10px 10px 0px 10px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 30px;
+    overflow-x: hidden;
+    background-color: black !important;
+}
+
+.logo {
+    border-radius: 50%;
+    filter: blur(1px);
+    position: fixed;
+    top: 50px;
+    z-index: 1;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    background-color: transparent;
+    font-family: serif;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+/* homepage section */
+.home {
+    height: 100vh;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    height: 100vh;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* living section */
+
+.living {
+    height: auto;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 992px) {
+    .video {
+    padding: 35px;
+    }
+}
+
+
+.icon {
+    font-size: 40px;
+    border: 5Fpx solid black;
+    color: white;
+    
+}
+
+a:hover {
+    text-decoration: none !important;
+  }
+
+@media (max-width: 375px) {
+    .icon {
+    margin: 10px 0px;
+    }
+}
+
+/* screaming section */
+
+.form-label {
+    color: white;
+}
+
+.scream:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
+/* store section */
+
+.albumtracks {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.tracklisa, .tracklisb, .tracklisc {
+    display: none;
+    color: white;
+    width: 300px;
+    height: auto;
+    font-size: 25px;
+    font-family: fantasy-serif;
+    line-height: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#tracklisa, #tracklisb, #tracklisc {
+    display: block;
+}
+
+.text-content {
+    display: none;
+}
+
+.lyrics {
+    color: white;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+}
+
+/* HTML elements */
+
+h1 {
+    font-size: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+    font-size: 10px !important;
+    }
+}
+
+h5 {
+    padding: 15px 0px; 
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px black;
+    overflow: hidden;
+}
+
+.custom-image {
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #f4f2f2,
+        0 0 10px #f8f5f5,
+        0 0 21px #e2dbdb,
+        0 0 42px rgb(225, 219, 217),
+        0 0 82px rgb(232, 227, 224),
+        0 0 92px rgb(250, 250, 247),
+        0 0 102px rgb(240, 194, 12),
+        0 0 151px rgb(226, 144, 21);
+  }
+
+  @keyframes handwriting {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .handwriting-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: handwriting 4s steps(40) forwards;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+span:hover {
+    cursor: pointer;
+    color: red;
+}
+
+span {
+    font-family: fantasy serif;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 420px) {
+    span {
+    margin: 4px;
+    }
+}
+
