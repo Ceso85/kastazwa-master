@@ -7,7 +7,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
         <link rel="stylesheet" type="text/css" href="cachetajoie.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <meta name="description" content="Room for Joy">
@@ -24,12 +25,8 @@
     <body style="background-image: url(images/Moon.jpg)">
             <a id="backhome"></a>
 
-            <nav class="navbar navbar-expand-md row">
-                <div class="justify-content-center align-items-center row"></div>
-                    <a href="#backhome" class="navbar-brand col-2 m-5"><img class="logo img-fluid" src="images\It's all a big nothing -front-.png" width="100" height="auto"></a>
-                        <h1 class="neonText handwriting-animation py-5 mb-5 col">KASTAZWA_:writing/at/home/playing/piano/for/fun:</h1>
-                </div>
-
+            <nav class="navbar navbar-expand-md justify-content-center row">
+                <h1 class="neonText py-5 mb-5">KASTAZWA_: writing/at/home/playing/piano/for/fun:</h1>
             </nav>
 
     <!--- topic: home flipping picture -->
@@ -100,34 +97,34 @@
 
                 <div>
                     <a href="#living">
-                        <img class="spaces img-fluid custom-image" alt="living" src="images\living.jpg" style="width:100px; height:100px;">
+                        <img class="spaces img-fluid custom-image" alt="living" src="images\living.jpg">
                     </a>
                 </div>
                 
 
                 <div>
                     <a href="#screaming">
-                        <img class="spaces spacesB img-fluid custom-image" alt="screaming" src="images\screaming.jpg" style="width:100px; height:100px;">
+                        <img class="spaces spacesB img-fluid custom-image" alt="screaming" src="images\screaming.jpg">
                     </a>
                 </div>
 
                 <div class="">
                     <a href="#guest">
-                        <img class="spaces img-fluid custom-image" alt="guest" src="images\guest.jpg" style="width:100px; height:100px;">
+                        <img class="spaces img-fluid custom-image" alt="guest" src="images\guest.jpg">
                     </a>
                 </div>
                 
                 <div>
                     <a href="#store">
-                        <img class="spaces spacesB img-fluid custom-image" alt="storage" src="images\storage.jpg" style="width:100px; height:100px;">
+                        <img class="spaces spacesB img-fluid custom-image" alt="storage" src="images\storage.jpg">
                     </a>
                 </div>
                     
                 <style> 
                         
                     .spaces {
-                        width: 250px;
-                        height: auto;
+                        width: 200px;
+                        height: 200px;
                         border-radius: 100%;
                         filter: grayscale(50%) blur(1px);
                         animation-name: float;
@@ -142,13 +139,14 @@
                         opacity: 1;
                         cursor: pointer;
                         }
-                    
                    
                     @keyframes float {
                         0% { transform: translateY(0px); }
                         50% { transform: translateY(-20px); }
                         100% { transform: translateY(0px); }
                         }
+
+                    
 
                     .spacesB {
                             animation-name: floatB;
@@ -160,6 +158,12 @@
                         0% { transform: translateY(0px); }
                         50% { transform: translateY(+20px); }
                         100% { transform: translateY(0px); }
+                        }
+
+                    @media (max-width: 375px) {
+                        .spaces {
+                        width: 50px;
+                        height: 50px; }
                         }
 
                 </style>
@@ -180,9 +184,9 @@
     <!--- topic: living --->
 
                 <div class="">
-                    <div class="row justify-content-center py-5" id="living">
+                    <div class="justify-content-center py-5 row" id="living">
                         <iframe width="560" height="315" 
-                            src="https://www.youtube.com/embed/H7J1JMZktN4" title="YouTube video player" title="YouTube video player" 
+                            src="https://www.youtube.com/embed/H7J1JMZktN4" title="YouTube video player" 
                                 frameborder="0" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                         </iframe>
@@ -250,8 +254,8 @@
             </div>
 
             <div class="row justify-content-center text-nowrap neonText icon py-5 my-5">
-                <p>SHOUT, SHOUT, LET_IT_ALL_OUT_SHOUT, SHOUT, 
-                    LET_IT_ALL_OUT_SHOUT, SHOUT, LET_IT_ALL_OUT_</p>
+                <h2>SHOUT, SHOUT, LET_IT_ALL_OUT_SHOUT, SHOUT, 
+                    LET_IT_ALL_OUT_SHOUT, SHOUT, LET_IT_ALL_OUT_</h2>
             </div>
 
         <!--- topic: guest --->
@@ -274,7 +278,7 @@
             </div>
 
         <div class="row justify-content-center text-nowrap neonText icon py-5 my-5">
-            <p>>WE_COULD_BE_GREAT_ROOMMATES_WE_COULD_BE_GREAT_ROOMMATES_WE_COULD_BE_GREAT_ROOMMATES_W_COULD_BE_GREAT_ROOMMATES_</p>
+            <h2>WE_COULD_BE_GREAT_ROOMMATES_WE_COULD_BE_GREAT_ROOMMATES_WE_COULD_BE_GREAT_ROOMMATES_</h2>
         </div>
             
          <!--- topic: storage room it's all a big nothing --->
@@ -1080,7 +1084,7 @@
         <!--- footer --->
 
         <footer class="row justify-content-around align-items-center pt-4">
-            <span class="mr-4">Let's keep in touch</span>
+            <a href="#backhome"><span class="mr-4">Go_back_on_top</span></a>
 
             <span>
             <a href="https://www.facebook.com/pages/category/Musician-Band/Kastazwa-2585911911635350/">
