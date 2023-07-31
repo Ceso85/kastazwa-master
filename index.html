@@ -25,9 +25,20 @@
     <body style="background-image: url(images/Moon.jpg)">
             <a id="backhome"></a>
 
-            <nav class="navbar navbar-expand-md justify-content-center row">
-                <h1 class="neonText py-5 mb-5">KASTAZWA_: writing/at/home/playing/piano/for/fun:</h1>
-            </nav>
+    <header class="mb-5">
+  
+        <div>
+            <a href="#homenu">
+                <img class="logo" src="images\Out of Shape ohne Titel.jpg" alt="logo">
+            </a>
+        </div>
+
+        <div>
+            <h1 class="neonText flickering justify-content-center align-items-start">KASTAZWA_: writing/at/home/playing/piano/for/fun:</h1>
+        </div>
+              
+    </header>
+            
 
     <!--- topic: home flipping picture -->
 
@@ -56,6 +67,12 @@
                                 justify-content: center;
                                 align-items: center;
                             }
+
+                            @media (max-device-width: 375px) {
+                                .thecard {
+                                max-width: 200px;
+                                height: 200px; }
+                                }
                     
                             .thecard-inner {
                                 width          : 100%;
@@ -119,6 +136,12 @@
                         <img class="spaces spacesB img-fluid custom-image" alt="storage" src="images\storage.jpg">
                     </a>
                 </div>
+
+                <div>
+                    <a href="traveljoie.html">
+                        <img class="spaces spacesB img-fluid custom-image" alt="storage" src="images\garden.jpg">
+                    </a>
+                </div>
                     
                 <style> 
                         
@@ -139,6 +162,12 @@
                         opacity: 1;
                         cursor: pointer;
                         }
+
+                    @media (max-device-width: 375px) {
+                        .spaces {
+                        width: 50px;
+                        height: 50px; }
+                        }
                    
                     @keyframes float {
                         0% { transform: translateY(0px); }
@@ -158,12 +187,6 @@
                         0% { transform: translateY(0px); }
                         50% { transform: translateY(+20px); }
                         100% { transform: translateY(0px); }
-                        }
-
-                    @media (max-width: 375px) {
-                        .spaces {
-                        width: 50px;
-                        height: 50px; }
                         }
 
                 </style>
