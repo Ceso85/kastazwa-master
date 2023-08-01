@@ -146,7 +146,7 @@ h1 {
     color: red;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 360px) {
     h1 {
     font-size: 1rem;
     }
