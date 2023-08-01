@@ -19,7 +19,7 @@ body {
     padding: 0px;
     box-shadow: 30px;
     overflow-x: hidden;
-    background-color: black !important;
+    background-color: red !important;
 }
 
 .logo {
