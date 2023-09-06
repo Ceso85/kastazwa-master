@@ -46,13 +46,6 @@ body {
     margin-bottom: 10px;
 }
 
-.menu {
-    height: 100vh;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 /* living section */
 
 .living {
@@ -147,11 +140,16 @@ h1 {
 }
 
 h2 {
+    display: inline-block;
+    font-family: "Georgia", serif;
+    color: white;
+    text-align: center;
     padding: 20px;
 }
 
 h5 {
-    padding: 15px 0px; 
+    padding: 15px 0px;
+    display: inline-block;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -178,7 +176,7 @@ h5 {
         0 0 92px rgb(250, 250, 247),
         0 0 102px rgb(240, 194, 12),
         0 0 151px rgb(226, 144, 21);
-    animation: flickering 0.1s infinite alternate;
+    animation: flickering 1.5s infinite alternate;
   }
 
   @media only screen and (max-width: 414px) {
