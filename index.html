@@ -20,211 +20,226 @@
         <script type="text/javascript" src="cachetajoie.js"></script>
     </head>
 
-    <!--- navbar --->
+    <!--- header --->
 
-    <body style="background-image: url(images/Moon.jpg)">
-            <a id="backhome"></a>
+    <body>
+        <a id="backhome"></a>
 
-    <header class="py-3">
-  
-        <div>
-            <a href="#homenu">
-                <img class="logo" src="images\Out of Shape ohne Titel.jpg" alt="logo">
-            </a>
-       
-            <h1 class="neonText flickering text-center">KASTAZWA_:</br> writing/at/home/playing/piano/for/fun:</h1>
-        </div>
-
-    </header>
-            
-
-    <!--- topic: home flipping picture -->
-
-    <div class="container-fluid overflow-hidden">
-        <div class="home">
-
-            <div class="row justify-content-around align-items-center mt-5">
-
-                <div class="col thecard">
-                    <div class="thecard-inner">
-                    
-                    <a href="#homenu">
-                        <img class="homepicfront img-fluid" src="images\Profile.jpg" alt="Front Image">
-                            <img class="homepicback img-fluid" src="images\Profile.jpg" alt="Back Image">
-                    </a>
-                    
-                    
+        <header>
+            <div class="row justify-content-start">
+                <div class="col-md-6">
+                    <div class="clickable-image-container-logo">
+                        <a href="#homenu">
+                            <img class="logo" src="images\Out of Shape ohne Titel.jpg" alt="logo">
+                        </a>
                     </div>
-        
-                    <style>
-        
-                            .thecard {
-                                max-width   : 350px;
-                                height      : 350px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                            }
+                </div>
+            </div>
+        </header>
 
-                            @media (max-device-width: 375px) {
-                                .thecard {
-                                max-width: 200px;
-                                height: 200px; }
-                                }
-                    
-                            .thecard-inner {
-                                width          : 100%;
-                                height         : 100%;
-                                transition     : transform 0.6s;
-                                transform-style: preserve-3d;
-                            }
-                    
-                            .thecard:hover .thecard-inner {
-                                transform: rotateY(360deg);
-                            }
-                            
-                            .homepicfront, .homepicback  {
-                                position           : absolute;
-                                backface-visibility: hidden;
-                                width               : 100%;
-                                height              : 100%;
-                                border-radius      : 100%;
-                                border-style: solid;
-                                border-color: yellow;
-                                border-width: 2px;
-                            }
-                    
-                            .homepicback {
-                                filter          : grayscale(50%);
-                                background-color: grey;
-                            }
-                    
-                    </style>
+        <style>
+
+            .clickable-image-container-logo {
+                position: relative;
+                cursor: pointer;
+                width: 200px;
+                height: 100px;
+            }
+
+        </style>
+        
+    <!--- topic: home -->
+
+    <div class="container">
+
+        <div class="row justify-content-start">
+            <div class="col">
+                <div class="clickable-image-container-title">
+                    <div class="centered-text-home">
+                        <h1 class="neonText flickering">KASTAZWA_:</br> writing/at/home/playing/piano/for/fun:</h1>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <style>
+
+            .clickable-image-container-title {
+                position: relative;
+                cursor: pointer;
+                height: 100vh;
+                margin-bottom: 50px;
+                background-image: url("images/Profile.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
+            .centered-text-home {
+                position: absolute;
+                top: 50%;
+                left: 20%;
+                transform: translate(-20%, -20%);
+            }
+
+        </style>
+
+    <!--- topic: menu -->
+
+        <div class="row justify-content-center align-items-start" style="color: white;" font-family="Lucida Sans Typewriter">
+            <h2>The never-ending changing of things, colours, moods, impressions.</br>
+            Write things down before the memories will vanish, take notes of names, places, feelings.</br>
+            Leave a trace, follow a melody without knowing where it is going.</br>
+            White on black, the scream that bounces inside my mind. The lack of rules, living in a world where disorder prevails, a world of no control, of things far from being good.<br>
+            The eternal search of something we can not find, the only thing that keeps the human alive.</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="clickable-image-container">
+                    <img src="images\living.jpg" alt="mexico" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="#living"><div class="icon neonText">LIVING ROOM</div></a>
+                    </div>
                 </div>
             </div>
         </div>
 
         
 
-    <!--- topic: home menu -->
-
-            <div class="row justify-content-around align-items-start py-5 my-5" id="homenu">
-
-                <div>
-                    <a href="#living">
-                        <img class="spaces img-fluid custom-image" alt="living" src="images\living.jpg">
-                    </a>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="clickable-image-container">
+                    <img src="images\screaming.jpg" alt="mexico" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="#screaming"><div class="icon neonText">SCREAMING ROOM</div></a>
+                    </div>
                 </div>
-                
-
-                <div>
-                    <a href="#screaming">
-                        <img class="spaces spacesB img-fluid custom-image" alt="screaming" src="images\screaming.jpg">
-                    </a>
-                </div>
-
-                <div class="">
-                    <a href="#guest">
-                        <img class="spaces img-fluid custom-image" alt="guest" src="images\guest.jpg">
-                    </a>
-                </div>
-                
-                <div>
-                    <a href="#store">
-                        <img class="spaces spacesB img-fluid custom-image" alt="storage" src="images\storage.jpg">
-                    </a>
-                </div>
-
-                <div>
-                   <a href="traveljoie.html">
-                        <img class="spaces spacesB img-fluid custom-image" alt="garden" src="images\garden.jpg">
-                    </a>
-                </div>
-                    
-                <style> 
-                        
-                    .spaces {
-                        width: 200px;
-                        height: 200px;
-                        border-radius: 100%;
-                        filter: grayscale(50%) blur(1px);
-                        animation-name: float;
-                        animation-duration: 3s;
-                        animation-iteration-count: infinite;
-                        border-style: solid;
-                        border-color: yellow;
-                        border-width: 2px;
-                        }
-
-                    .spaces:hover .overlay {
-                        opacity: 1;
-                        cursor: pointer;
-                        }
-
-                    @media (max-width: 360px) {
-                        .spaces {
-                        display: inline-block;
-                        width: 80px;
-                        height: 80px; }
-                        }
-                   
-                    @keyframes float {
-                        0% { transform: translateY(0px); }
-                        50% { transform: translateY(-20px); }
-                        100% { transform: translateY(0px); }
-                        }
-
-                    
-
-                    .spacesB {
-                            animation-name: floatB;
-                            animation-duration: 3s;
-                            animation-iteration-count: infinite;
-                        }
-
-                    @keyframes floatB {
-                        0% { transform: translateY(0px); }
-                        50% { transform: translateY(+20px); }
-                        100% { transform: translateY(0px); }
-                        }
-
-                </style>
-
             </div>
-                    
-            <div class="row justify-content-center align-items-start mx-5" style="color: white;" font-family="Lucida Sans Typewriter">
-                <p>Time to fill this space with something new, with something that comes up daily from the never-ending changing of things, of colours, of moods, of impressions.</br>
-                Time to write things down before the memories will vanish, to take notes of names, places, feelings.</br>
-                The urge to leave a trace, the urge to follow a melody without knowing where it is going.</br>
-                The urge to fill black with with white, the scream that bounces inside my mind. The lack of rules, living in a world where disorder prevails, a world of no control, of things far from being good.<br>
-                The eternal search of something we can not find, the only thing that keeps the human alive.</p>
+        </div>
+    
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="clickable-image-container">
+                    <img src="images\guest.jpg" alt="mexico" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="#guest"><div class="icon neonText">GUEST ROOM</div></a>
+                    </div>
+                </div>
             </div>
-            
+        </div>
+
 
         
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="clickable-image-container">
+                    <img src="images\storage.jpg" alt="mexico" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="#storage"><div class="icon neonText">STORAGE ROOM</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+    
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="clickable-image-container">
+                    <img src="images\garden.jpg" alt="mexico" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="traveljoie.html"><div class="icon neonText">GARDEN</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <style>
+
+            .h2 {
+                color:white !important;
+            }
+
+            .centered-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .clickable-image-container {
+                position: relative;
+                cursor: pointer;
+                width: 300px;
+                height: 200px;
+                margin: 10px auto;
+            }
+
+            .clickable-image {
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                object-fit: cover;
+            }
+
+        </style>
+            
     <!--- topic: living --->
 
-                <div class="">
-                    <div class="justify-content-center py-5 row" id="living">
-                        <iframe width="560" height="315" 
-                            src="https://www.youtube.com/embed/H7J1JMZktN4" title="YouTube video player" 
-                                frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                        </iframe>
-    
-                        <iframe width="560" height="315" 
-                            src="https://www.youtube.com/embed/iC61w6vNKTI" title="YouTube video player" 
-                                frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                        </iframe>
-    
-                        <iframe width="560" height="315" 
-                            src="https://www.youtube.com/embed/KIgpfClLznE" title="YouTube video player" 
-                                frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                        </iframe>
+                <div id="living">
+                    <div class="row justify-content-center py-2 ratio-16x9">
+                        <div class="col">
+                            <div class="video-container">
+                                <iframe class="video" src="https://www.youtube.com/embed/H7J1JMZktN4" title="YouTube video player" 
+                                        frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="row justify-content-center py-2 ratio-16x9">
+                        <div class="col">
+                            <div class="video-container">
+                                <iframe class="video" src="https://www.youtube.com/embed/iC61w6vNKTI" title="YouTube video player" 
+                                        frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center py-2 ratio-16x9">
+                        <div class="col">
+                            <div class="video-container">
+                                <iframe class="video" src="https://www.youtube.com/embed/KIgpfClLznE" title="YouTube video player" 
+                                        frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+
+                .video-container {
+                position: relative;
+                width: 360px;
+                height: 240px;
+                margin: 10px auto;
+                }
+
+                .video {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                </style>
     
                     
     
@@ -246,10 +261,9 @@
 
     <!--- topic: screaming --->
         
-        <a id="screaming"></a>
-            <div class="screaming">
+            <div id="screaming">
 
-                <div class="row justify-content-center py-5 my-5" id="screaming">
+                <div class="row justify-content-center py-5 my-5">
                     <!--- echo
                     <?php --->
                     "<form action='".setComments($conn)."' method='POST'>
@@ -282,9 +296,9 @@
 
         <!--- topic: guest --->
 
-            <div class="guest">
+            <div id="guest">
 
-                <div id="guest" class="row justify-content-center pt-5 mt-5">
+                <div class="row justify-content-center pt-5 mt-5">
                     <div class="col-sm-4" data-aos="rotate">
                         <img src="images/Recording Leo Haus II.jpg" class="img-fluid"></div>
                 
@@ -305,9 +319,9 @@
             
          <!--- topic: storage room it's all a big nothing --->
 
-            <div class="store">
+            <div id="storage">
 
-                <div class="py-2" id="store">
+                <div class="py-2">
 
                     <div class="row">
                         <div class="col">
@@ -1131,7 +1145,7 @@
 
         <!--- external links --->
 
-    </div>
+        </div>
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                     <script>
                         AOS.init();
@@ -1139,6 +1153,6 @@
 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        </body>
+    </body>
 
 </html>
