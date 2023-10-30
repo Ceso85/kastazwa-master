@@ -46,7 +46,7 @@ body {
     cursor: pointer;
 }
 
-/* living section */
+/* inside out */
 
 .living {
     height: auto;
@@ -69,22 +69,6 @@ body {
 a:hover {
     text-decoration: none !important;
   }
-
-
-
-/* screaming section */
-
-.form-label {
-    color: white;
-}
-
-.scream:hover {
-    cursor: pointer;
-    transform: scale(1.5);
-}
-
-
-/* store section */
 
 .albumtracks {
     width: 300px;
