@@ -26,24 +26,29 @@
         <a id="backhome"></a>
 
         <header>
-            <div class="row justify-content-start">
-                <div class="col-md-6">
-                    <div class="clickable-image-container-logo">
-                        <a href="#homenu">
-                            <img class="logo" src="images\Out of Shape ohne Titel.jpg" alt="logo">
-                        </a>
-                    </div>
+                <div class="row clickable-image-container-logo">
+                    <a href="#homenu">
+                        <img src="images\Out of Shape ohne Titel.jpg" alt="logo">
+                    </a>
                 </div>
-            </div>
         </header>
 
         <style>
 
             .clickable-image-container-logo {
-                position: relative;
                 cursor: pointer;
-                width: 200px;
-                height: 100px;
+                position: fixed !important;
+                margin-top: 3px;
+                margin-left: 3px;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .clickable-image-container-logo img {
+                width: 7%;
+                height: auto;
+                border-radius: 100%;
+                z-index: -1;
             }
 
         </style>
@@ -52,8 +57,8 @@
 
     <div class="container">
 
-        <div class="row justify-content-start">
-            <div class="col">
+        <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
                 <div class="clickable-image-container-title">
                     <div class="centered-text-home">
                         <h1 class="neonText flickering">KASTAZWA_:</br> writing/at/home/playing/piano/for/fun:</h1>
@@ -67,6 +72,7 @@
             .clickable-image-container-title {
                 position: relative;
                 cursor: pointer;
+                width: 100vh;
                 height: 100vh;
                 margin-bottom: 50px;
                 background-image: url("images/Profile.jpg");
@@ -132,7 +138,7 @@
             .clickable-image-container {
                 position: relative;
                 cursor: pointer;
-                width: 450px;
+                width: 300px;
                 height: 300px;
                 margin: 10px auto;
             }
