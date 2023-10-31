@@ -24,6 +24,22 @@ container {
     margin: 0 auto;
 }
 
+.clickable-image-container-logo {
+    cursor: pointer;
+    position: fixed !important;
+    max-width: 100%;
+    height: auto;
+}
+
+.clickable-image-container-logo img {
+    width: 7%;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 100%;
+    z-index: -1;
+}
+
 body {
     width: 100%;
     border: 10px 10px 0px 10px;

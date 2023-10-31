@@ -15,17 +15,37 @@
 
     <body>
 
-        <header class="py-3">
-    
-            <div>
-                <a href="index.html">
-                    <img class="logo" src="images\Out of Shape ohne Titel.jpg" alt="logo">
-                </a>
-        
-                <h1 class="neonText flickering text-center">KASTAZWA_:</br> sur/la/route: how/many/roads/must/a/man/walk/down</h1>
+            <header>
+                <div class="row clickable-image-container-logo">
+                    <a href="index.html">
+                        <img src="images\Out of Shape ohne Titel.jpg" alt="logo">
+                    </a>
+                </div>
+
+                <h1 class="neonText flickering text-center">KASTAZWA_:</br> sur/la/route: Contents</h1>
             </div>
 
-        </header>
+            </header>
+
+            <style>
+
+                .clickable-image-container-logo {
+                    cursor: pointer;
+                    position: fixed !important;
+                    margin-top: 3px;
+                    margin-left: 3px;
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .clickable-image-container-logo img {
+                    width: 7%;
+                    height: auto;
+                    border-radius: 100%;
+                    z-index: -1;
+                }
+
+            </style>
 
             <div class="row justify-content-center align-items-start m-5" style="color: white;" font-family="Lucida Sans Typewriter">
                 <p class="font-italic">Life is a dream, a sensorial experience. 
