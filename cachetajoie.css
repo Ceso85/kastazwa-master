@@ -24,6 +24,18 @@ container {
     margin: 0 auto;
 }
 
+body {
+    width: 100%;
+    border: 10px 10px 0px 10px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 30px;
+    background-color: black !important;
+
+}
+
+/* images */
+
 .clickable-image-container-logo {
     cursor: pointer;
     position: fixed !important;
@@ -40,14 +52,10 @@ container {
     z-index: -1;
 }
 
-body {
-    width: 100%;
-    border: 10px 10px 0px 10px;
-    margin: 0px;
-    padding: 0px;
-    box-shadow: 30px;
-    background-color: black !important;
-
+.blog {
+    width: 300px;
+    height: 200px;
+    border-radius: 100%;
 }
 
 /* inside out */
