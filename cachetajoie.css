@@ -30,7 +30,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-shadow: 30px;
-    background-color: black !important;
+    background-color: white !important;
 
 }
 
@@ -44,10 +44,10 @@ body {
 }
 
 .clickable-image-container-logo img {
-    width: 7%;
+    width: 3%;
     height: auto;
-    margin-top: 5px;
-    margin-left: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
     border-radius: 100%;
     z-index: -1;
 }
@@ -68,7 +68,7 @@ body {
 
 .icon {
     border: 5Fpx solid black;
-    color: white;
+    color: black;
     
 }
 
@@ -124,6 +124,7 @@ h1 {
     margin: 0 auto;
     padding-top: 20px;
     font-family: serif;
+    color: black;
     overflow: hidden;
 
 }
@@ -137,15 +138,19 @@ h1 {
 h2 {
     display: inline-block;
     font-family: "Georgia", serif;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px;
+}
+
+h3 {
+    color: white;
 }
 
 h5 {
     padding: 15px 0px;
     display: inline-block;
-    color: white;
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -153,6 +158,10 @@ h5 {
     h5 {
     font-size: 1rem;
     }
+}
+
+p {
+    color: black;
 }
 
 .custom-image {
@@ -169,8 +178,8 @@ h5 {
         0 0 42px rgb(225, 219, 217),
         0 0 82px rgb(232, 227, 224),
         0 0 92px rgb(250, 250, 247),
-        0 0 102px rgb(240, 194, 12),
-        0 0 151px rgb(226, 144, 21);
+        0 0 102px rgb(62, 57, 38),
+        0 0 151px rgb(18, 13, 7);
     animation: flickering 1.5s infinite alternate;
   }
 
@@ -179,6 +188,20 @@ h5 {
     font-size: 1rem;
     }
 }
+
+.neonText2 {
+    color: #fff;
+    text-shadow:
+        0 0 7px #180f0f,
+        0 0 10px #140f0f,
+        0 0 21px #131111,
+        0 0 42px rgb(56, 54, 53),
+        0 0 82px rgb(125, 123, 123),
+        0 0 92px rgb(250, 250, 247),
+        0 0 102px rgb(249, 249, 245),
+        0 0 151px rgb(250, 248, 247);
+    animation: flickering 1.5s infinite alternate;
+  }
 
   @keyframes flickering {
     0% {
@@ -192,14 +215,9 @@ h5 {
     }
   }
 
-span:hover {
-    cursor: pointer;
-    color: red;
-}
-
 span {
     font-family: fantasy serif;
-    color: whitesmoke;
+    color: black;
 }
 
 @media only screen and (max-width: 414px) {
