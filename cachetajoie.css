@@ -90,7 +90,7 @@ a:hover {
 
 .tracklisa, .tracklisb, .tracklisc {
     display: none;
-    color: white;
+    color: black;
     width: 300px;
     height: auto;
     font-size: 25px;
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .lyrics {
-    color: white;
+    color: black;
 }
 
 /* footer */

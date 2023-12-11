@@ -3,24 +3,15 @@ $(document).ready(function() {
         var target = $(this).data("target");
         var $targetElement = jQuery("#" + target);
 
-        if ($targetElement.is(":visible")) {
-            $targetElement.fadeOut(1000);
-        } else {
-            $targetElement.fadeIn(1000);
-        }
+        $targetElement.fadeToggle(1000);
     });
-});
 
-$(document).ready(function() {
     $(".track-item").click(function() {
         var target = $(this).data("target");
         var $targetContent = $("#" + target);
 
-        if ($targetContent.is(":visible"))  {
-            $targetContent.hide();
-        } else {
-            $(".text-content").hide();
-            $targetContent.show();
-        }
+        $(".text-content").not($targetContent).hide();
+        $targetContent.toggle();
+
     });
 });
