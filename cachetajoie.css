@@ -36,6 +36,11 @@ body {
 
 /* images */
 
+img {
+    display: block;
+    margin: auto;
+}
+
 .clickable-image-container-logo {
     cursor: pointer;
     position: fixed !important;
