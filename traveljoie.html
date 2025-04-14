@@ -18,27 +18,68 @@
         <header class="py-3">
 
             <a href="index.html">
-                <h1 class="neonText2 flickering text-center">KASTAZWA_:</br> sur/la/route: Contents</h1>
+                <img src="images/Kroad.png" alt="Kroad" class="upper-left">
             </a>
 
         </header>
 
             <style>
 
-                .clickable-image-container-logo {
-                    cursor: pointer;
-                    position: fixed !important;
-                    margin-top: 3px;
-                    margin-left: 3px;
-                    max-width: 100%;
-                    height: auto;
+                .scrollable-gallery {
+                    display: flex;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                    gap: 20px;
+                    padding: 10px;
                 }
 
-                .clickable-image-container-logo img {
-                    width: 7%;
-                    height: auto;
-                    border-radius: 100%;
-                    z-index: -1;
+                .scrollable-gallery::-webkit-scrollbar {
+                    height: 8px; /* Adjust scrollbar height */
+                }
+
+                .scrollable-gallery::-webkit-scrollbar-thumb {
+                    background: #888; /* Scrollbar color */
+                    border-radius: 10px; /* Rounded scrollbar */
+                }
+
+                .scrollable-gallery::-webkit-scrollbar-thumb:hover {
+                    background: #555; /* Scrollbar hover color */
+                }
+
+                .clickable-image-container {
+                    position: relative;
+                    cursor: pointer;
+                    width: 300px;
+                    height: 200px;
+                    flex-shrink: 0; /* Prevent images from shrinking */
+                }
+
+                .clickable-image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20%;
+                }
+
+                .h2 {
+                    color:white !important;
+                }
+
+                .centered-text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    text-align: center;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    .clickable-image-container {
+                    width: 200px; /* Smaller width for smaller screens */
+                    height: 150px; /* Smaller height for smaller screens */
+                    }
                 }
 
             </style>
@@ -57,15 +98,14 @@
                 but hopefully it will come back in the future.</p>
             </div>
 
-            <!-- New York -->
+            <div class="scrollable-gallery">
             
-            <div class="clickable-image-container">
-                <img src="images/newyork_1.jpg" alt="newyork" class="clickable-image">
-                <div class="centered-text">
-                    <a href="newyork.html" target="_blank"><h3 class="neonText2 flickering">New York</h3></a>
+                <div class="clickable-image-container">
+                    <img src="images/newyork_1.jpg" alt="newyork" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="newyork.html" target="_blank"><h3 class="neonText2 flickering">New York</h3></a>
+                    </div>
                 </div>
-            </div>
-            <!-- Prague -->
             
                 <div class="clickable-image-container">
                     <img src="images/prague_1.jpg" alt="prague_1" class="clickable-image">
@@ -74,258 +114,160 @@
                     </div>
                 </div>
 
-            <!-- Galicia -->
+                <div class="clickable-image-container">
+                    <img src="images/galicia.jpg" alt="galicia" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="galicia.html" target="_blank"><h3 class="neonText2 flickering">Galicia</h3></a>
+                    </div>
+                </div>
 
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images/galicia.jpg" alt="galicia" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="galicia.html" target="_blank"><h3 class="neonText2 flickering">Galicia</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images/portugal_3.jpg" alt="portugal_3" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="portugal_3.html" target="_blank"><h3 class="neonText2 flickering">Portugal north</h3></a>
+                    </div>
+                </div>
 
-            <!-- Portugal north -->
+                <div class="clickable-image-container">
+                    <img src="images/rugen_1.jpg" alt="rugen" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="rugen.html" target="_blank"><h3 class="neonText2 flickering">Rügen</h3></a>
+                    </div>
+                </div>
 
-                        <div class="clickable-image-container">
-                            <img src="images/portugal_3.jpg" alt="portugal_3" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="portugal_3.html" target="_blank"><h3 class="neonText2 flickering">Portugal north</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images/perú_1.jpg" alt="perú" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="perú.html" target="_blank"><h3 class="neonText2 flickering">Perú</h3></a>
+                    </div>
+                </div>
 
-            <!-- Rügen -->
+                <div class="clickable-image-container">
+                    <img src="images/ecuador_1.jpg" alt="ecuador" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="ecuador.html" target="_blank"><h3 class="neonText2 flickering">Ecuador</h3></a>
+                    </div>
+                </div>
 
-                        <div class="clickable-image-container">
-                            <img src="images/rugen_1.jpg" alt="rügen" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="rugen.html" target="_blank"><h3 class="neonText2 flickering">Rügen</h3></a>
-                            </div>
-                        </div>
-            </div>
+                <div class="clickable-image-container">
+                    <img src="images/colombia_1.jpg" alt="colombia" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="colombia.html" target="_blank"><h3 class="neonText2 flickering">Colombia</h3></a>
+                    </div>
+                </div>
 
+                <div class="clickable-image-container">
+                    <img src="images\madrid_1.jpg" alt="madrid" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="madrid.html" target="_blank"><h3 class="neonText2 flickering">Madrid</h3></a>
+                    </div>
+                </div>
 
-            <!-- Perú -->
+                <div class="clickable-image-container">
+                    <img src="images\paris_1.jpg" alt="paris" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="paris.html" target="_blank"><h3 class="neonText2 flickering">Paris</h3></a>
+                    </div>
+                </div>
 
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images/perú_1.jpg" alt="perú" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="perú.html" target="_blank"><h3 class="neonText2 flickering">Perú</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images\georgia_1.jpg" alt="georgia" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="georgia.html" target="_blank"><h3 class="neonText2 flickering">Georgia</h3></a>
+                    </div>
+                </div>
 
-            <!-- Ecuador -->
+                <div class="clickable-image-container">
+                    <img src="images\turkey_4.jpg" alt="turkey_2" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="turkey_2.html" target="_blank"><h3 class="neonText2 flickering">Turkey east</h3></a>
+                    </div>
+                </div>
 
-                        <div class="clickable-image-container">
-                            <img src="images/ecuador_1.jpg" alt="ecuador" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="ecuador.html" target="_blank"><h3 class="neonText2 flickering">Ecuador</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images\berlin_1.jpg" alt="berlin" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="berlin.html" target="_blank"><h3 class="neonText2 flickering">Berlin</h3></a>
+                    </div>
+                </div>
 
-            <!-- Colombia -->
+                <div class="clickable-image-container">
+                    <img src="images\normandie_1.webp" alt="normandie" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="normandie.html" target="_blank"><h3 class="neonText2 flickering">Normandie</h3></a>
+                    </div>
+                </div>
 
-                        <div class="clickable-image-container">
-                            <img src="images/colombia_1.jpg" alt="colombia" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="colombia.html" target="_blank"><h3 class="neonText2 flickering">Colombia</h3></a>
-                            </div>
-                        </div>
-            </div>
+                <div class="clickable-image-container">
+                    <img src="images\mexico_1.webp" alt="mexico" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="mexico.html" target="_blank"><h3 class="neonText2 flickering">Mexico</h3></a>
+                    </div>
+                </div>
 
+                <div class="clickable-image-container">
+                    <img src="images\london_1.webp" alt="london" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="london.html" target="_blank"><h3 class="neonText2 flickering">London</h3></a>
+                    </div>
+                </div>
 
-            <!-- Madrid -->
+                <div class="clickable-image-container">
+                    <img src="images\turkey_1.webp" alt="turkey" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="turkey.html" target="_blank"><h3 class="neonText2 flickering">Istanbul</h3></a>
+                    </div>
+                </div>
 
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images\madrid_1.jpg" alt="madrid" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="madrid.html" target="_blank"><h3 class="neonText2 flickering">Madrid</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images\albania.webp" alt="albania" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="albania.html" target="_blank"><h3 class="neonText2 flickering">Albania</h3></a>
+                    </div>
+                </div>
 
-            <!-- Paris -->
+                <div class="clickable-image-container">
+                    <img src="images\italia.webp" alt="italy" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="italia.html" target="_blank"><h3 class="neonText2 flickering">Italy</h3></a>
+                    </div>
+                </div>
 
-                        <div class="clickable-image-container">
-                            <img src="images\paris_1.jpg" alt="paris" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="paris.html" target="_blank"><h3 class="neonText2 flickering">Paris</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images\catalunya.webp" alt="catalunya" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="catalunya.html" target="_blank"><h3 class="neonText2 flickering">Catalunya</h3></a>
+                    </div>
+                </div>
+ 
+                <div class="clickable-image-container">
+                    <img src="images\andalusia.webp" alt="andalusia" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="andalusia.html" target="_blank"><h3 class="neonText2 flickering">Andalusia</h3></a>
+                    </div>
+                </div>
 
-            <!-- Georgia -->
+                <div class="clickable-image-container">
+                    <img src="images\croatia.webp" alt="croatia" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="croatia.html" target="_blank"><h3 class="neonText2 flickering">Croatia north</h3></a>
+                    </div>
+                </div>
 
-                        <div class="clickable-image-container">
-                            <img src="images\georgia_1.jpg" alt="georgia" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="georgia.html" target="_blank"><h3 class="neonText2 flickering">Georgia</h3></a>
-                            </div>
-                        </div>
-            </div>
+                <div class="clickable-image-container">
+                    <img src="images\greece_1.webp" alt="greece_1" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="greece.html" target="_blank"><h3 class="neonText2 flickering">Greece east</h3></a>
+                    </div>
+                </div>
 
+                <div class="clickable-image-container">
+                    <img src="images\jordan.webp" alt="jordan" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="jordan.html" target="_blank"><h3 class="neonText2 flickering">Jordan</h3></a>
+                    </div>
+                </div>
 
-            <!-- Turkey east -->
-
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images\turkey_4.jpg" alt="turkey_2" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="turkey_2.html" target="_blank"><h3 class="neonText2 flickering">Turkey east</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Berlin -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\berlin_1.jpg" alt="berlin" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="berlin.html" target="_blank"><h3 class="neonText2 flickering">Berlin</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Normandie -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\normandie_1.webp" alt="normandie" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="normandie.html" target="_blank"><h3 class="neonText2 flickering">Normandie</h3></a>
-                            </div>
-                        </div>
-            </div>
-
-            <style>
-
-                .h2 {
-                    color:white !important;
-                }
-
-                .centered-text {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                
-                .clickable-image-container {
-                    position: relative;
-                    cursor: pointer;
-                    width: 300px;
-                    height: 200px;
-                    margin: 10px auto;
-                }
-
-                .clickable-image {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 20%;
-                }
-
-            </style>
-
-            <!-- Mexico -->
-
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images\mexico_1.webp" alt="mexico" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="mexico.html" target="_blank"><h3 class="neonText2 flickering">Mexico</h3></a>
-                            </div>
-                        </div>
-
-            <!-- London -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\london_1.webp" alt="london" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="london.html" target="_blank"><h3 class="neonText2 flickering">London</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Istanbul -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\turkey_1.webp" alt="turkey" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="turkey.html" target="_blank"><h3 class="neonText2 flickering">Istanbul</h3></a>
-                            </div>
-                        </div>
-            </div>
-
-
-            <!-- Albania -->
-
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images\albania.webp" alt="albania" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="albania.html" target="_blank"><h3 class="neonText2 flickering">Albania</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Italy -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\italia.webp" alt="italy" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="italia.html" target="_blank"><h3 class="neonText2 flickering">Italy</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Catalunya -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\catalunya.webp" alt="catalunya" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="catalunya.html" target="_blank"><h3 class="neonText2 flickering">Catalunya</h3></a>
-                            </div>
-                        </div>
-            </div>
-
-
-            <!-- Andalusia -->
-
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images\andalusia.webp" alt="andalusia" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="andalusia.html" target="_blank"><h3 class="neonText2 flickering">Andalusia</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Croatia north -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\croatia.webp" alt="croatia" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="croatia.html" target="_blank"><h3 class="neonText2 flickering">Croatia north</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Greece east -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\greece_1.webp" alt="greece_1" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="greece.html" target="_blank"><h3 class="neonText2 flickering">Greece east</h3></a>
-                            </div>
-                        </div>
-            </div>
-
-
-            <!-- Jordan -->
-
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images\jordan.webp" alt="jordan" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="jordan.html" target="_blank"><h3 class="neonText2 flickering">Jordan</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Balkans 2 -->
-
-            <div class="container-fluid row">
                 <div class="clickable-image-container">
                     <img src="images/balkans_4.jpg" alt="balkans_2" class="clickable-image">
                     <div class="centered-text">
@@ -333,52 +275,40 @@
                     </div>
                 </div>
 
-            <!-- California -->
+                <div class="clickable-image-container">
+                    <img src="images\california.webp" alt="california" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="california.html" target="_blank"><h3 class="neonText2 flickering">California</h3></a>
+                    </div>
+                </div>
 
-                        <div class="clickable-image-container">
-                            <img src="images\california.webp" alt="california" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="california.html" target="_blank"><h3 class="neonText2 flickering">California</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Cuba -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\cuba_1.webp" alt="cuba_1" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="cuba.html" target="_blank"><h3 class="neonText2 flickering">Cuba</h3></a>
-                            </div>
-                        </div>
-            </div>
+                <div class="clickable-image-container">
+                    <img src="images\cuba_1.webp" alt="cuba_1" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="cuba.html" target="_blank"><h3 class="neonText2 flickering">Cuba</h3></a>
+                    </div>
+                </div>
             
-            <!-- Balkans -->
+                <div class="clickable-image-container">
+                    <img src="images\balkans_1.webp" alt="balkans_1" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="balkans1.html" target="_blank"><h3 class="neonText2 flickering">Balkans</h3></a>
+                    </div>
+                </div>
 
-            <div class="container-fluid row">
-                        <div class="clickable-image-container">
-                            <img src="images\balkans_1.webp" alt="balkans_1" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="balkans1.html" target="_blank"><h3 class="neonText2 flickering">Balkans</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images\morocco_1.webp" alt="morocco" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="morocco.html" target="_blank"><h3 class="neonText2 flickering">Morocco</h3></a>
+                    </div>
+                </div>
 
-            <!-- Morocco -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\morocco_1.webp" alt="morocco" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="morocco.html" target="_blank"><h3 class="neonText2 flickering">Morocco</h3></a>
-                            </div>
-                        </div>
-
-            <!-- Portugal center -->
-
-                        <div class="clickable-image-container">
-                            <img src="images\portugal_1.webp" alt="portugal_2" class="clickable-image">
-                            <div class="centered-text">
-                                <a href="portugal_2.html" target="_blank"><h3 class="neonText2 flickering">Portugal center</h3></a>
-                            </div>
-                        </div>
+                <div class="clickable-image-container">
+                    <img src="images\portugal_1.webp" alt="portugal_2" class="clickable-image">
+                    <div class="centered-text">
+                        <a href="portugal_2.html" target="_blank"><h3 class="neonText2 flickering">Portugal center</h3></a>
+                    </div>
+                </div>
             </div>
 
             <!--- footer --->

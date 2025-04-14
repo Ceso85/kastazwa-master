@@ -53,13 +53,19 @@ img {
     height: auto;
     margin-top: 10px;
     margin-left: 20px;
-    border-radius: 100%;
     z-index: -1;
 }
 
 .blog {
     width: 600px;
     height: 400px;
+}
+
+.upper-left {
+    max-width: 40%;
+    min-width: 0%;
+    height: auto;
+    border-radius: 100%;
 }
 
 /* inside out */
