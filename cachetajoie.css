@@ -47,16 +47,9 @@ img {
     bottom: 50px !important;
     width: 300px; /* Set a default width */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 100%;
     z-index: 1000; /* Ensure it stays on top of other elements */
-    transition: transform 0.3s ease, width 0.3s ease; /* Add smooth animation */
 }
 
-/* Add hover effect to make it dynamic */
-.img-home:hover {
-    transform: scale(1.2); /* Slightly enlarge the image on hover */
-    width: 120px; /* Increase the width dynamically */
-}
 
 /* Responsive adjustments for smaller screens */
 @media only screen and (max-width: 768px) {
@@ -71,21 +64,6 @@ img {
     }
 }
 
-
-.clickable-image-container-logo {
-    cursor: pointer;
-    position: fixed !important;
-    max-width: 100%;
-    height: auto;
-}
-
-.clickable-image-container-logo img {
-    width: 3%;
-    height: auto;
-    margin-top: 10px;
-    margin-left: 20px;
-    z-index: -1;
-}
 
 .blog {
     width: 600px;
