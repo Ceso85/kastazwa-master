@@ -55,9 +55,23 @@
             .centered-text-home {
                 position: absolute;
                 top: 30%;
-                left: 5%;
                 transform: translate(-20%, -20%);
             }
+
+            @media only screen and (max-width: 768px) {
+            .centered-text-home {
+                top: 20%; /* Adjust position for smaller screens */
+                transform: translate(-10%, -10%);
+                }
+            }
+
+            @media only screen and (max-width: 480px) {
+            .centered-text-home {
+                top: 15%; /* Further adjust position for very small screens */
+                transform: translate(-5%, -5%);
+                }
+            }
+            
 
         </style>
 
