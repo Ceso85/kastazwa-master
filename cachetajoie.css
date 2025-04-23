@@ -44,6 +44,8 @@ p {
 /* images */
 
 img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
     display: block;
     margin: auto;
 }
