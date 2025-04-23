@@ -60,13 +60,13 @@ img {
 
 /* Responsive adjustments for smaller screens */
 @media only screen and (max-width: 768px) {
-    .img-home {
+    img, .img-home {
         width: 80px; /* Reduce size on smaller screens */
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .img-home {
+    img, .img-home {
         width: 60px; /* Further reduce size for very small screens */
     }
 }
