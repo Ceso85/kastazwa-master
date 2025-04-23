@@ -66,15 +66,33 @@ img {
 
 
 .blog {
-    width: 600px;
-    height: 400px;
+    width: 1000px;
+    height: auto;
+    max-width: none;
+    margin-top: 0;
 }
 
 .upper-left {
     max-width: 40%;
-    min-width: 0%;
     height: auto;
     border-radius: 100%;
+    position: relative; /* Allows positioning */
+    left: -100px; /* Move the logo to the left */
+}
+
+/* Responsive adjustment for smaller screens */
+@media only screen and (max-width: 768px) {
+    .upper-left {
+        left: -10px; /* Slightly move the logo left for tablets */
+        max-width: 50%; /* Adjust size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .upper-left {
+        left: 0; /* Center or reset the position for very small screens */
+        max-width: 60%; /* Further adjust size for smartphones */
+    }
 }
 
 /* inside out */
