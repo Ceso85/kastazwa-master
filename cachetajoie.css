@@ -14,7 +14,8 @@ html {
 
 header {
     background: transparent;
-    height: 100%;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height based on content */
 }
 
 container {
@@ -29,6 +30,7 @@ body {
     border: 10px 10px 0px 10px;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     box-shadow: 30px;
     background-color: white !important;
 
@@ -39,6 +41,11 @@ p {
     overflow: visible; /* Prevent text from being clipped */
     word-wrap: break-word; /* Ensure long words wrap */
     white-space: normal; /* Prevent text from staying on one line */
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* images */
@@ -60,26 +67,39 @@ img {
 }
 
 
-/* Responsive adjustments for smaller screens */
 @media only screen and (max-width: 768px) {
     img, .img-home {
-        width: 80px; /* Reduce size on smaller screens */
+        max-width: 100%; /* Scale images to 90% of their container */
+        margin: 0 auto; /* Center images */
     }
 }
 
 @media only screen and (max-width: 480px) {
     img, .img-home {
-        width: 60px; /* Further reduce size for very small screens */
+        max-width: 100%; /* Scale images to 100% of their container */
+        margin: 0 auto; /* Center images */
     }
 }
 
 
 .blog {
-    width: 1000px;
+    max-width: 100%;
     height: auto;
-    max-width: 1000px;
-    margin-top: 0;
+    margin: 0 auto;
     display: block;
+}
+
+/* Override media queries for .blog */
+@media only screen and (max-width: 768px) {
+    .blog {
+        max-width: 100%; /* Ensure the image takes up the full container width */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .blog {
+        max-width: 100%; /* Ensure the image takes up the full container width */
+    }
 }
 
 .upper-left {
