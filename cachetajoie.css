@@ -150,6 +150,10 @@ img {
     }
 }
 
+a{
+    color: black; /* Set the link color to black */
+  }
+
 a:hover {
     text-decoration: none !important;
   }
