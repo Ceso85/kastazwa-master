@@ -28,12 +28,15 @@
                 .scrollable-gallery {
                     display: flex;
                     overflow-x: auto;
+                    -ms-overflow-style: none;  /* IE and Edge */
+                    scrollbar-width: none;     /* Firefox */
                     white-space: nowrap;
                     gap: 20px;
                     padding: 10px;
                 }
 
                 .scrollable-gallery::-webkit-scrollbar {
+                    display: none; /* Hide scrollbar */
                     height: 8px; /* Adjust scrollbar height */
                 }
 
