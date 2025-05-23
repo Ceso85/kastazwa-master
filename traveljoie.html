@@ -27,17 +27,18 @@
 
                 .scrollable-gallery {
                     display: flex;
+                    flex-direction: row;
                     overflow-x: auto;
                     -ms-overflow-style: none;  /* IE and Edge */
                     scrollbar-width: none;     /* Firefox */
-                    white-space: nowrap;
                     gap: 20px;
                     padding: 10px;
+                    width: 100%;
                 }
 
                 .scrollable-gallery::-webkit-scrollbar {
-                    display: none; /* Hide scrollbar */
-                    height: 8px; /* Adjust scrollbar height */
+                    width: 0px;  /* Hide scrollbar but keep scrollability */
+                    background: transparent;
                 }
 
                 .scrollable-gallery::-webkit-scrollbar-thumb {

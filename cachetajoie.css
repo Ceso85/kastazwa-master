@@ -30,7 +30,6 @@ body {
     border: 10px 10px 0px 10px;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
     box-shadow: 30px;
     background-color: white !important;
 
