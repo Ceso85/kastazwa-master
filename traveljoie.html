@@ -24,6 +24,12 @@
         </header>
 
             <style>
+                .scrollable-gallery-container {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-bottom: 20px;
+                    box-sizing: border-box; /* Optional: set max-width if needed */
+                }
 
                 .scrollable-gallery {
                     display: flex;
@@ -96,7 +102,7 @@
                 but hopefully it will come back in the future.</p>
             </div>
 
-            <div style="overflow-x:auto; width:100vw; margin-left:calc(-50vw + 50%);">
+            <div class="scrollable-gallery-container" style="overflow-x:auto; width:100vw; margin-left:calc(-50vw + 50%);">
                 <div class="scrollable-gallery">
                 
                     <div class="clickable-image-container">
