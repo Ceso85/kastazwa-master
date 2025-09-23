@@ -24,31 +24,23 @@
         </header>
 
             <style>
-                .scrollable-gallery-container {
-                    padding-left: 20px;
-                    padding-right: 20px;
+                .gallery-flex-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    align-items: center;
+                    width: 100vw;
+                    margin-left: calc(-50vw + 50%);
                     margin-bottom: 20px;
-                    box-sizing: border-box; /* Optional: set max-width if needed */
+                    box-sizing: border-box;
                 }
 
-                .scrollable-gallery {
+                .gallery-flex-row {
                     display: flex;
                     flex-direction: row;
-                    overflow-x: auto;
-                    -ms-overflow-style: none;  /* IE and Edge */
-                    scrollbar-width: none;     /* Firefox */
                     gap: 20px;
-                    padding: 10px 0; /* Only vertical padding to avoid horizontal overflow */
-                    min-width: max-content; /* Allow children to overflow horizontally */
-                }
-
-                .scrollable-gallery::-webkit-scrollbar-thumb {
-                    background: #888; /* Scrollbar color */
-                    border-radius: 10px; /* Rounded scrollbar */
-                }
-
-                .scrollable-gallery::-webkit-scrollbar-thumb:hover {
-                    background: #555; /* Scrollbar hover color */
+                    justify-content: center;
+                    width: 100%;
                 }
 
                 .clickable-image-container {
@@ -56,7 +48,7 @@
                     cursor: pointer;
                     width: 300px;
                     height: 200px;
-                    flex-shrink: 0; /* Prevent images from shrinking */
+                    flex-shrink: 0;
                 }
 
                 .clickable-image {
@@ -74,15 +66,25 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
                     color: white;
                     text-align: center;
                 }
 
+                @media only screen and (max-width: 900px) {
+                    .gallery-flex-row {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .gallery-flex-container {
+                        gap: 10px;
+                    }
+                }
+
                 @media only screen and (max-width: 768px) {
                     .clickable-image-container {
-                    width: 200px; /* Smaller width for smaller screens */
-                    height: 150px; /* Smaller height for smaller screens */
+                        width: 200px;
+                        height: 150px;
                     }
                 }
 
@@ -102,237 +104,44 @@
                 but hopefully it will come back in the future.</p>
             </div>
 
-            <div class="scrollable-gallery-container" style="overflow-x:auto; width:100vw; margin-left:calc(-50vw + 50%);">
-                <div class="scrollable-gallery">
-                
+            <div class="gallery-flex-container">
+                <div class="gallery-flex-row">
                     <div class="clickable-image-container">
                         <img src="images/swiss_1.jpg" alt="switzerland" class="clickable-image">
                         <div class="centered-text">
-                            <a href="switzerland.html" target="_blank"><h3 class="neonText2 flickering">Switzerland</h3></a>
+                            <h3 class="neonText2 flickering">North America</h3>
                         </div>
                     </div>
-
                     <div class="clickable-image-container">
                         <img src="images/newyork_1.jpg" alt="newyork" class="clickable-image">
                         <div class="centered-text">
-                            <a href="newyork.html" target="_blank"><h3 class="neonText2 flickering">New York</h3></a>
+                            <h3 class="neonText2 flickering">Europe</h3>
                         </div>
                     </div>
-                
                     <div class="clickable-image-container">
                         <img src="images/prague_1.jpg" alt="prague_1" class="clickable-image">
                         <div class="centered-text">
-                            <a href="prague.html" target="_blank"><h3 class="neonText2 flickering">Prague</h3></a>
+                            <h3 class="neonText2 flickering">Asia</h3>
                         </div>
                     </div>
-
+                </div>
+                <div class="gallery-flex-row">
                     <div class="clickable-image-container">
                         <img src="images/galicia.jpg" alt="galicia" class="clickable-image">
                         <div class="centered-text">
-                            <a href="galicia.html" target="_blank"><h3 class="neonText2 flickering">Galicia</h3></a>
+                            <h3 class="neonText2 flickering">South America</h3>
                         </div>
                     </div>
-
                     <div class="clickable-image-container">
                         <img src="images/portugal_3.jpg" alt="portugal_3" class="clickable-image">
                         <div class="centered-text">
-                            <a href="portugal_3.html" target="_blank"><h3 class="neonText2 flickering">Portugal Norte</h3></a>
+                            <h3 class="neonText2 flickering">Africa</h3>
                         </div>
                     </div>
-
                     <div class="clickable-image-container">
                         <img src="images/rugen_1.jpg" alt="ostsee" class="clickable-image">
                         <div class="centered-text">
-                            <a href="ostsee.html" target="_blank"><h3 class="neonText2 flickering">Ostsee</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images/perú_1.jpg" alt="perú" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="perú.html" target="_blank"><h3 class="neonText2 flickering">Perú</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images/ecuador_1.jpg" alt="ecuador" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="ecuador.html" target="_blank"><h3 class="neonText2 flickering">Ecuador</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images/colombia_1.jpg" alt="colombia" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="colombia.html" target="_blank"><h3 class="neonText2 flickering">Colombia</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\madrid_1.jpg" alt="madrid" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="madrid.html" target="_blank"><h3 class="neonText2 flickering">Madrid</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\paris_1.jpg" alt="paris" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="paris.html" target="_blank"><h3 class="neonText2 flickering">Paris</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\georgia_1.jpg" alt="georgia" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="georgia.html" target="_blank"><h3 class="neonText2 flickering">Georgia</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\turkey_4.jpg" alt="turkey_4" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="turkey_2.html" target="_blank"><h3 class="neonText2 flickering">Cappadocia/Kars</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\berlin_1.jpg" alt="berlin" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="berlin.html" target="_blank"><h3 class="neonText2 flickering">Berlin</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\normandie_1.webp" alt="normandie" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="normandie.html" target="_blank"><h3 class="neonText2 flickering">Normandie</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\mexico_1.webp" alt="mexico" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="mexico.html" target="_blank"><h3 class="neonText2 flickering">Mexico</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\london_1.webp" alt="london" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="london.html" target="_blank"><h3 class="neonText2 flickering">London</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\turkey_1.webp" alt="turkey" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="turkey.html" target="_blank"><h3 class="neonText2 flickering">Istanbul</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\albania.webp" alt="albania" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="albania.html" target="_blank"><h3 class="neonText2 flickering">Albania</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\italia.webp" alt="italy" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="italia.html" target="_blank"><h3 class="neonText2 flickering">Italy</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\catalunya.webp" alt="catalunya" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="catalunya.html" target="_blank"><h3 class="neonText2 flickering">Catalunya</h3></a>
-                        </div>
-                    </div>
-    
-                    <div class="clickable-image-container">
-                        <img src="images\andalusia.webp" alt="andalusia" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="andalusia.html" target="_blank"><h3 class="neonText2 flickering">Andalusia</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\croatia.webp" alt="croatia" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="croatia.html" target="_blank"><h3 class="neonText2 flickering">Istria</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\greece_1.webp" alt="greece_1" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="greece.html" target="_blank"><h3 class="neonText2 flickering">Thessaloniki</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\jordan.webp" alt="jordan" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="jordan.html" target="_blank"><h3 class="neonText2 flickering">Jordan</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images/balkans_4.jpg" alt="balkans_2" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="balkans2.html" target="_blank"><h3 class="neonText2 flickering">Balkans 2</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\california_1.webp" alt="california_1" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="california.html" target="_blank"><h3 class="neonText2 flickering">California</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\cuba_1.webp" alt="cuba_1" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="cuba.html" target="_blank"><h3 class="neonText2 flickering">Cuba</h3></a>
-                        </div>
-                    </div>
-                
-                    <div class="clickable-image-container">
-                        <img src="images\balkans_1.webp" alt="balkans_1" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="balkans1.html" target="_blank"><h3 class="neonText2 flickering">Balkans</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\morocco_1.webp" alt="morocco" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="morocco.html" target="_blank"><h3 class="neonText2 flickering">Morocco</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\portugal_1.webp" alt="portugal_2" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="portugal_2.html" target="_blank"><h3 class="neonText2 flickering">Lisbon</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\ireland_1.jpg" alt="ireland_1" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="ireland.html" target="_blank"><h3 class="neonText2 flickering">Ireland</h3></a>
-                        </div>
-                    </div>
-
-                    <div class="clickable-image-container">
-                        <img src="images\bristol_1.jpg" alt="bristol_1" class="clickable-image">
-                        <div class="centered-text">
-                            <a href="bristol.html" target="_blank"><h3 class="neonText2 flickering">Bristol</h3></a>
+                            <h3 class="neonText2 flickering">Australia & Pacific</h3>
                         </div>
                     </div>
                 </div>
