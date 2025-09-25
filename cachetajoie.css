@@ -91,7 +91,6 @@ img {
     }
 }
 
-
 .vlog {
     width: 40%; /* Reduce the width to 80% of its container */
     height: auto; /* Maintain the aspect ratio */
@@ -123,6 +122,67 @@ img {
     border-radius: 100%;
     position: relative; /* Allows positioning */
     left: -100px; /* Move the logo to the left */
+}
+
+
+/* Gallery and image layout */
+.gallery-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.gallery-flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.clickable-image-container {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.clickable-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .gallery-flex-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-flex-container {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .clickable-image-container {
+        width: 200px;
+        height: 150px;
+    }
 }
 
 /* Responsive adjustment for smaller screens */
