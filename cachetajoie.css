@@ -140,6 +140,7 @@ img {
 .gallery-flex-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     width: 100%;
