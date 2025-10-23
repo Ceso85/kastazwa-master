@@ -221,14 +221,24 @@ img {
     }
 }
 
-a{
-    color: black !important; /* Set the link color to black */
-    text-decoration: none;
-  }
+/* Make anchors visible and accessible site-wide */
+a {
+    color: #0a58ca; /* Bootstrap link-blue as default visible color */
+    text-decoration: underline; /* Make links visibly distinct */
+    transition: color 0.15s ease-in-out, text-decoration 0.15s;
+}
 
-a:hover {
-    text-decoration: none !important;
-  }
+a:hover,
+a:active {
+    color: #084298; /* darker blue on hover */
+    text-decoration: underline; /* keep underline on hover */
+}
+
+/* Ensure keyboard focus is visible for accessibility */
+a:focus {
+    outline: 3px solid rgba(10,88,202,0.25);
+    outline-offset: 2px;
+}
 
 .albumtracks {
     width: 300px;
