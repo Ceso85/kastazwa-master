@@ -224,20 +224,32 @@ img {
 /* Make anchors visible and accessible site-wide */
 a {
     color: #0a58ca; /* Bootstrap link-blue as default visible color */
-    text-decoration: underline; /* Make links visibly distinct */
-    transition: color 0.15s ease-in-out, text-decoration 0.15s;
+    text-decoration: none !important; /* remove underline by default (override other styles) */
+    -webkit-text-decoration: none !important;
+    transition: color 0.15s ease-in-out, opacity 0.15s;
 }
 
 a:hover,
 a:active {
     color: #084298; /* darker blue on hover */
-    text-decoration: underline; /* keep underline on hover */
+    opacity: 0.9;
 }
 
 /* Ensure keyboard focus is visible for accessibility */
 a:focus {
     outline: 3px solid rgba(10,88,202,0.25);
     outline-offset: 2px;
+    text-decoration: none !important;
+}
+
+/* Also remove underline for any element inside an anchor (e.g., <a><span>...</span></a>) */
+a, a * {
+    text-decoration: none !important;
+}
+
+/* Some Bootstrap utilities may add 'text-decoration-underline' class; explicitly neutralize it inside our site */
+.text-decoration-underline {
+    text-decoration: none !important;
 }
 
 .albumtracks {
