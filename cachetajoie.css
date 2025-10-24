@@ -252,6 +252,12 @@ a, a * {
     text-decoration: none !important;
 }
 
+/* TOC summary links should appear black (override general link color) */
+.toc-list a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
 .albumtracks {
     width: 300px;
     height: 300px;
