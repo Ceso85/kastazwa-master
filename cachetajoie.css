@@ -258,6 +258,14 @@ a, a * {
     text-decoration: none !important;
 }
 
+/* Make the footer "Impressum" link black site-wide (override bootstrap/utilities) */
+footer a[href="Impressumjoie.html"],
+footer a[href="./Impressumjoie.html"],
+footer a[href="/Impressumjoie.html"] {
+    color: black !important;
+    text-decoration: none !important;
+}
+
 .albumtracks {
     width: 300px;
     height: 300px;
