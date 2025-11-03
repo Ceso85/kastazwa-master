@@ -37,6 +37,7 @@ body {
 
 p {
     color: black; /* Ensure text is visible */
+    font-family: 'Lucida Sans Typewriter', monospace;
     overflow: visible; /* Prevent text from being clipped */
     word-wrap: break-word; /* Ensure long words wrap */
     white-space: normal; /* Prevent text from staying on one line */
@@ -350,7 +351,7 @@ h5 {
     padding: 15px 0px;
     display: inline-block;
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans Typewriter', monospace;
 }
 
 @media only screen and (max-width: 414px) {
@@ -359,9 +360,6 @@ h5 {
     }
 }
 
-p {
-    color: black;
-}
 
 .custom-image {
     flex-basis: 20%;
