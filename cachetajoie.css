@@ -43,6 +43,12 @@ p {
     white-space: normal; /* Prevent text from staying on one line */
 }
 
+/* Make all unordered lists use the site's Lucida monospace for consistency */
+ul {
+    font-family: 'Lucida Sans Typewriter', monospace;
+    color: black; /* ensure list text matches paragraph color */
+}
+
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -364,6 +370,21 @@ h5 {
 .custom-image {
     flex-basis: 20%;
     max-width: 20%;
+}
+
+/* Poem / block container used on some pages (e.g. jordan.html) */
+.poem-container {
+    border: 1px solid black; /* thin black border */
+    padding: 1rem; /* space inside the border */
+    border-radius: 4px;
+    background: transparent;
+}
+
+.poem-container p {
+    font-style: italic; /* poetic style */
+    /* preserve intentional line breaks in the source without using <br> tags */
+    white-space: pre-line;
+    margin: 0; /* avoid extra paragraph margin inside the box */
 }
 
 .neonText {
