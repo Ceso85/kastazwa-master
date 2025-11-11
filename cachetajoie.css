@@ -341,6 +341,11 @@ h3 {
     text-align: center;
 }
 
+/* Make centered image captions use the same monospace font as the page description */
+.centered-text h3 {
+    font-family: 'Lucida Sans Typewriter', monospace;
+}
+
 @media only screen and (max-width: 768px) {
     h3 {
         font-size: 1.5rem !important;
