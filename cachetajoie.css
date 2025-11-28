@@ -54,6 +54,12 @@ ul {
     margin-right: 0;
 }
 
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+}
+
 @media (max-width: 767.98px) {
   .row.w-100 {
     margin-left: 0;
@@ -75,26 +81,40 @@ img {
 }
 
 .img-home {
-    position: fixed; /* Fix the image to the viewport */
-    right: 20px; /* Distance from the left of the screen */
-    bottom: 50px !important;
-    width: 300px; /* Set a default width */
+    /* Place the home/logo image in the normal flow so it sits inside the hero
+       and can be centered by its parent `.centered-text-home`. Use responsive
+       sizing with clamp() for a larger, flexible logo that scales with viewport. */
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: clamp(243px, 57vw, 729px); /* responsive size: 243px min, 729px max at 57vw */
     height: auto; /* Maintain aspect ratio */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    max-width: 100%;
+    z-index: 10; /* keep it above the background but below overlays */
+    display: block;
+    margin: 0 auto;
+    align-self: flex-start !important;
 }
 
-
 @media only screen and (max-width: 768px) {
-    img, .img-home {
-        max-width: 100%; /* Scale images to 90% of their container */
-        margin: 0 auto; /* Center images */
+    img {
+        max-width: 100%; /* keep general images responsive */
+        height: auto;
+    }
+    .img-home {
+        width: clamp(203px, 65vw, 486px); /* tablet size */
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    img, .img-home {
-        max-width: 100%; /* Scale images to 100% of their container */
-        margin: 0 auto; /* Center images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .img-home {
+        width: clamp(162px, 73vw, 324px); /* mobile size */
+        height: auto;
     }
 }
 
@@ -153,6 +173,16 @@ img {
     width: 100%;
 }
 
+.clickable-image-container-home {
+    position: relative;
+    cursor: pointer;
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+    overflow: hidden
+}
+
 .clickable-image-container {
     position: relative;
     cursor: pointer;
@@ -190,6 +220,7 @@ img {
     .clickable-image-container {
         width: 200px;
         height: 150px;
+        border-radius: 50% !important;
     }
 }
 
@@ -217,8 +248,9 @@ img {
 }
 
 .icon {
-    border: 5Fpx solid black;
-    color: black;
+    font-family: serif;
+    font-weight: bold;
+    color: white
     
 }
 
@@ -314,25 +346,41 @@ footer {
 h1 {
     margin: 0 auto;
     padding-top: 20px;
+    display: block;
     font-family: serif;
+    font-weight: normal;
     color: black;
-    overflow: hidden;
-
-}
-
-@media only screen and (max-width: 480px) {
-    h1 {
-    padding-top: 0px;
-    font-size: 25px !important;
-    }
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    max-width: 100%;
 }
 
 h2 {
     display: inline-block;
-    font-family: "Georgia", serif;
+    font-family: serif;
+    font-weight: normal;
     color: black;
     text-align: center;
     padding: 20px;
+    font-size: 1.4rem !important; /* slightly smaller */
+    line-height: 1.25;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.2rem;
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: 1rem;
+        padding: 12px;
+    }
 }
 
 h3 {
@@ -343,6 +391,48 @@ h3 {
 
 /* Make centered image captions use the same monospace font as the page description */
 .centered-text h3 {
+    font-family: 'Lucida Sans Typewriter', monospace;
+}
+
+h4 {
+    color: black;
+    font-size: 1rem !important;
+}
+
+@media only screen and (max-width: 480px) {
+    h4 {
+        font-size: 0.5rem;
+    }
+}
+
+/* Smooth scrolling for in-page anchors */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Skip link: visible when focused for keyboard users */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    background: #000;
+    color: #fff;
+    padding: 6px 10px;
+    z-index: 9999;
+    text-decoration: none;
+}
+
+/* Local intro block font-family (replaces invalid inline attribute) */
+.intro-text {
     font-family: 'Lucida Sans Typewriter', monospace;
 }
 
