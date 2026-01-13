@@ -81,7 +81,7 @@
 
         </div>
 
-                <div class="row justify-content-center align-items-start mx-5" style="color: white;" font-family="Lucida Sans Typewriter">
+        <div class="row justify-content-center align-items-start mx-5" style="color: white;" font-family="Lucida Sans Typewriter">
 
             <h5 style="font-weight: bold;">IV. Czesław Milosz</h5>
 
@@ -95,10 +95,17 @@
             <img src="images\poland_3.jpg" alt="poland_3" class="my-5 vlog">
 
         </div>
-\
 
+        <div class="row justify-content-center align-items-start mx-5" style="color: white;" font-family="Lucida Sans Typewriter">
 
+            <h5 style="font-weight: bold;">V. Krzysztof Kieślowski</h5>
 
+            <p>Since this seems to be a recurrent axis regarding the polish art world of the last century, after Chopin and Milosz there is one more polish artist that has a strong connection with the country of France which is <b>Krzysztof Kieślowski</b>.
+            Kieślowski is probably the most acclaimed polish filmmaker of the last century, famous for having made different movies which includes <i>Dekalog (1989)</i>, a series of ten short movies that can claim the liking of her majesty Stanley Kubrick and the so called <i>Three Colours trilogy (1993/94)</i>, a series of movies where the director tries 
+            to represent the french revolutionary ideals: liberty, equality and fraternity. Kieślowski received a lot of financial support from France in order to take his art to the point he reached and calling a trilogy of movies with the colours of the french flag was somehow a way to say thanks to the country. In his works Kieślowski depicts a minimalistic vision of Poland, 
+            full of silences, empty patterns and short dialogues which was generally very appreciated by the critic.</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ClUBYsA3vws?si=1xq0GXZd97Am4Nyk" title="talking heads" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
 
@@ -125,6 +132,17 @@
             
                         <span>&copy Kastazwa 2023</span>                 
         </footer>
+
+<script>
+(function(){
+  var iframe = document.querySelector('#kie-video iframe');
+  var fallback = document.querySelector('#kie-video .embed-fallback');
+  if(!iframe || !fallback) return; 
+  var loaded = false;
+  var timer = setTimeout(function(){ if(!loaded){ fallback.classList.add('visible'); } }, 3500);
+  iframe.addEventListener('load', function(){ loaded = true; clearTimeout(timer); fallback.classList.remove('visible'); });
+})();
+</script>
 
     </body>
 </html>
