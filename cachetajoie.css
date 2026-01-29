@@ -37,14 +37,6 @@ body {
 
 }
 
-p {
-    color: black; /* Ensure text is visible */
-    font-family: 'Lucida Sans Typewriter', monospace;
-    overflow: visible; /* Prevent text from being clipped */
-    word-wrap: break-word; /* Ensure long words wrap */
-    white-space: normal; /* Prevent text from staying on one line */
-}
-
 /* Make all unordered lists use the site's Lucida monospace for consistency */
 ul {
     font-family: 'Lucida Sans Typewriter', monospace;
@@ -95,7 +87,6 @@ img {
     z-index: 10; /* keep it above the background but below overlays */
     display: block;
     margin: 0 auto;
-    align-self: flex-start !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -178,8 +169,8 @@ img {
 .clickable-image-container-home {
     position: relative;
     cursor: pointer;
-    width: 140px !important;
-    height: 140px !important;
+    width: 180px !important;
+    height: 180px !important;
     border-radius: 50% !important;
     flex-shrink: 0;
     overflow: hidden
@@ -346,20 +337,33 @@ footer {
 
 h1 {
     margin: 0 auto;
-    padding-top: 20px;
     display: block;
-    font-family: serif;
+    font-family: 'Lucida Sans Typewriter', monospace;
     font-weight: normal;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 2.5rem;
     max-width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem !important;
+        padding: 6px;
+    }
+}
+
 h2 {
     display: inline-block;
-    font-family: serif;
+    font-family: 'Courier New', 'Lucida Sans Typewriter', monospace;
     font-weight: normal;
     color: black;
     text-align: center;
@@ -387,6 +391,14 @@ h3 {
     color: white;
     font-size: 2rem;
     text-align: center;
+}
+
+p {
+    color: black; /* Ensure text is visible */
+    font-family: 'Lucida Sans Typewriter', monospace;
+    overflow: visible; /* Prevent text from being clipped */
+    word-wrap: break-word; /* Ensure long words wrap */
+    white-space: normal; /* Prevent text from staying on one line */
 }
 
 /* Make centered image captions use the same monospace font as the page description */
@@ -524,7 +536,8 @@ h5 {
 
 span {
     font-family: fantasy serif;
-    color: black;
+    color: blue;
+    font-size: 1.4rem !important; /* slightly smaller */
 }
 
 @media only screen and (max-width: 414px) {
@@ -534,13 +547,10 @@ span {
     }
 }
 
-/* fonts */
-
-.protest-revolution-regular {
-    font-family: "Protest Revolution", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.bold-word {
+    font-weight: bold;
+    color: black
+}
 
 
 
