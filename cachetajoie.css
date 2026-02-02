@@ -164,6 +164,7 @@ img {
     gap: 20px;
     justify-content: center;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .clickable-image-container-home {
@@ -303,19 +304,20 @@ footer a[href="/Impressumjoie.html"] {
     cursor: pointer;
 }
 
-.tracklisa, .tracklisb, .tracklisc {
+.tracklist {
     display: none;
     color: black;
-    width: 300px;
     height: auto;
-    font-size: 25px;
-    font-family: fantasy-serif;
-    line-height: 30px;
+    font-family: 'Lucida Sans Typewriter', monospace;
     border: 2px solid white;
     cursor: pointer;
+    /* Responsive font: minimum 14px, scales with screen, max 18px */
+    font-size: clamp(14px, 2vw, 18px); 
+    width: 100%;
+    margin: 0 auto;
 }
 
-#tracklisa, #tracklisb, #tracklisc {
+#tracklist {
     display: block;
 }
 
