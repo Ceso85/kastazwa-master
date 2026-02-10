@@ -17,7 +17,7 @@ jobs:
       - name: Generate Sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: https://ceso85.github.io/kastazwa-master/
+          base-url-path: https://kastazwa.com/
           path-to-root: .
           automated-testing: true
 
